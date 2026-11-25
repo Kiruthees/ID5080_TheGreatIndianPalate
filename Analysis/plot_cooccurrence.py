@@ -189,12 +189,12 @@ def main():
     os.makedirs(outdir, exist_ok=True)
     df = pd.read_csv(a.results)
     out = lambda f: os.path.join(outdir, f)
-    fig_scatter(df, out("1_pooled_vs_stratified.svg"))
-    fig_obs_exp(df, out("2_obs_vs_expected.svg"))
-    fig_top_pairs(df, out("3_top_pairs.svg"))
-    fig_heatmap(df, out("4_heatmap.svg"))
-    fig_network(df, out("5_network.svg"))
-    fig_dumbbell(df, out("6_regional_vs_masked.svg"))
+    fig_scatter(df, out("ic_pooled_vs_stratified.svg"))
+    fig_obs_exp(df, out("ic_obs_vs_expected.svg"))
+    fig_top_pairs(df, out("ic_top_pairs.svg"))
+    fig_heatmap(df, out("ic_heatmap.svg"))
+    fig_network(df, out("ic_strongest_pairings_modularity.svg"))
+    fig_dumbbell(df, out("ic_regional_vs_masked.svg"))
 
 
 if __name__ == "__main__":
