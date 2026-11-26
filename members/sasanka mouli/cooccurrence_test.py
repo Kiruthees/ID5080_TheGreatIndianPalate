@@ -1,47 +1,47 @@
 import argparse, random
-from itertools import chain
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from scipy import sparse
 from scipy.stats import norm, poisson
 
-# ----------------------------------------------------------------------------
-# 1. Loading + cleaning
-# ----------------------------------------------------------------------------
-# Confident spelling / plural variants only. Review before extending: merging
-# things like "slivered badam" -> "badam" or "pearl onion" -> "small onion" is a
-# modelling decision, not a typo fix.
-MERGE = {
-    "red chili powder": "red chilli powder",
-    "whole black pepper corns": "whole black peppercorns",
-    "black pepper corns": "black peppercorns",
-    "flax seed powder": "flaxseed powder",
-    "stone flowers": "stone flower",
-    "kabuli channa": "kabuli chana",
-    "soya chunks": "soy chunks",
-    "avocados": "avocado",
-    "peanut": "peanuts",
-    "kachris": "kachri",
-    "sweet potatoes": "sweet potato",
-    "goond": "gond",
-    "kasoori methi": "kasuri methi",
-    "dried red chillies": "dry red chillies",
-    "red yellow and green bell pepper": "red yellow or green bell pepper",
-    "ragi dosa battter": "ragi dosa batter",
-}
+# # ----------------------------------------------------------------------------
+# # 1. Loading + cleaning
+# # ----------------------------------------------------------------------------
+# # Confident spelling / plural variants only. Review before extending: merging
+# # things like "slivered badam" -> "badam" or "pearl onion" -> "small onion" is a
+# # modelling decision, not a typo fix.
+# MERGE = {
+#     "red chili powder": "red chilli powder",
+#     "whole black pepper corns": "whole black peppercorns",
+#     "black pepper corns": "black peppercorns",
+#     "flax seed powder": "flaxseed powder",
+#     "stone flowers": "stone flower",
+#     "kabuli channa": "kabuli chana",
+#     "soya chunks": "soy chunks",
+#     "avocados": "avocado",
+#     "peanut": "peanuts",
+#     "kachris": "kachri",
+#     "sweet potatoes": "sweet potato",
+#     "goond": "gond",
+#     "kasoori methi": "kasuri methi",
+#     "dried red chillies": "dry red chillies",
+#     "red yellow and green bell pepper": "red yellow or green bell pepper",
+#     "ragi dosa battter": "ragi dosa batter",
+# }
 
 
-def load(nodes_path, edges_path, merge=MERGE):
+def load(nodes_path, edges_path):
     nodes = pd.read_csv(nodes_path, dtype=str, keep_default_na=False)
     edges = pd.read_csv(edges_path, dtype=str, keep_default_na=False)
     for c in ("Source", "Target"):
         edges[c] = edges[c].str.strip()
-    edges["Target"] = edges["Target"].str.lower().replace(merge)
+    edges["Target"] = edges["Target"].str.lower()#.replace(merge)
     edges = edges.drop_duplicates()          # also removes duplicates created by merging
 
     rec = nodes[nodes.Type == "Recipe"].copy()
-    rec["Cuisine"] = rec["Cuisine"].str.replace("\ufeff", "", regex=False).str.strip()
+    # rec["Cuisine"] = rec["Cuisine"].str.replace("\ufeff", "", regex=False).str.strip()
     cuisine = rec.set_index("Id")["Cuisine"]
     return edges, cuisine
 
@@ -152,58 +152,56 @@ def pair_table(names, obs, mu, sd, p_emp, min_expected):
     df["q"] = bh(df.p.to_numpy())                      # BH over all pairs tested
     return df
 
+BASE_DIR = Path.cwd().resolve().parent.parent
+DATA_DIR   = BASE_DIR / "common" / "data_processed"
+NODES_FILE = DATA_DIR / "nodes_9.0.csv"
+EDGES_FILE = DATA_DIR / "edges_6.0.csv"
+OUT_DIR = BASE_DIR / "members" / "sasanka mouli"
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--nodes", required=True); ap.add_argument("--edges", required=True)
-    a = ap.parse_args()
+min_deg = 30
+samples = 500
+burn_in = 5
+thin = 2
+min_expected = 5.0
+min_stratum = 30
+drop_generic = "Indian"
+exclude = ["salt", "water"]
+seed = 0
+out = OUT_DIR / "cooccurrence_results.csv"
 
-    min_deg = 30
-    samples = 500
-    burn_in = 5
-    thin = 2
-    min_expected = 5.0
-    min_stratum = 30
-    drop_generic = "Indian"
-    exclude = ["salt", "water"]
-    seed = 0
-    out = "cooccurrence_results.csv"
+edges, cuisine = load(NODES_FILE, EDGES_FILE)
+recipes, ings, rows, strata = build_rows(edges, cuisine, drop_generic or None, min_stratum)
+deg = np.bincount(np.concatenate(rows), minlength=len(ings))
+keep = [i for i in range(len(ings)) if deg[i] >= min_deg and ings[i] not in set(exclude)]
+col_map = -np.ones(len(ings), dtype=int); col_map[keep] = np.arange(len(keep))
+names = [ings[i] for i in keep]
 
-    edges, cuisine = load(a.nodes, a.edges)
-    recipes, ings, rows, strata = build_rows(edges, cuisine, drop_generic or None, min_stratum)
-    deg = np.bincount(np.concatenate(rows), minlength=len(ings))
-    keep = [i for i in range(len(ings)) if deg[i] >= min_deg and ings[i] not in set(exclude)]
-    col_map = -np.ones(len(ings), dtype=int); col_map[keep] = np.arange(len(keep))
-    names = [ings[i] for i in keep]
+pooled = null_distribution(rows, np.zeros(len(rows), dtype=int), col_map, len(keep),
+                            samples, burn_in, thin, seed)
+strat = null_distribution(rows, strata, col_map, len(keep),
+                            samples, burn_in, thin, seed + 1)
 
-    pooled = null_distribution(rows, np.zeros(len(rows), dtype=int), col_map, len(keep),
-                               samples, burn_in, thin, seed)
-    strat = null_distribution(rows, strata, col_map, len(keep),
-                              samples, burn_in, thin, seed + 1)
+P = pair_table(names, *pooled, min_expected).add_suffix("_pool")
+S = pair_table(names, *strat, min_expected).add_suffix("_strat")
+df = pd.concat([P[["a_pool", "b_pool", "obs_pool", "null_mean_pool", "z_pool", "q_pool", "p_emp_pool"]],
+                S[["null_mean_strat", "z_strat", "q_strat", "p_emp_strat"]]], axis=1)
+df = df.rename(columns={"a_pool": "a", "b_pool": "b", "obs_pool": "obs"})
 
-    P = pair_table(names, *pooled, min_expected).add_suffix("_pool")
-    S = pair_table(names, *strat, min_expected).add_suffix("_strat")
-    df = pd.concat([P[["a_pool", "b_pool", "obs_pool", "null_mean_pool", "z_pool", "q_pool", "p_emp_pool"]],
-                    S[["null_mean_strat", "z_strat", "q_strat", "p_emp_strat"]]], axis=1)
-    df = df.rename(columns={"a_pool": "a", "b_pool": "b", "obs_pool": "obs"})
-
-    sig_p = df.q_pool < 0.05; sig_s = df.q_strat < 0.05
-    same = np.sign(df.z_pool) == np.sign(df.z_strat)
-    df["class"] = "ns"
-    df.loc[sig_p & sig_s & same, "class"] = "universal (both nulls)"
-    df.loc[sig_p & ~sig_s, "class"] = "regional (pooled only)"
-    df.loc[~sig_p & sig_s, "class"] = "masked (stratified only)"
-    df.loc[sig_p & sig_s & ~same, "class"] = "sign flip"
-    df = df.sort_values("z_pool", key=np.abs, ascending=False)
-    df.to_csv(out, index=False)
-    print(df["class"].value_counts().to_string())
-    print("\nTop over-represented (pooled):")
-    print(df[df.q_pool < 0.05].sort_values("z_pool", ascending=False).head(10)[
-        ["a", "b", "obs", "null_mean_pool", "z_pool", "z_strat", "class"]].to_string(index=False))
-    print("\nTop avoided (pooled):")
-    print(df[df.q_pool < 0.05].sort_values("z_pool").head(10)[
-        ["a", "b", "obs", "null_mean_pool", "z_pool", "z_strat", "class"]].to_string(index=False))
+sig_p = df.q_pool < 0.05; sig_s = df.q_strat < 0.05
+same = np.sign(df.z_pool) == np.sign(df.z_strat)
+df["class"] = "ns"
+df.loc[sig_p & sig_s & same, "class"] = "universal (both nulls)"
+df.loc[sig_p & ~sig_s, "class"] = "regional (pooled only)"
+df.loc[~sig_p & sig_s, "class"] = "masked (stratified only)"
+df.loc[sig_p & sig_s & ~same, "class"] = "sign flip"
+df = df.sort_values("z_pool", key=np.abs, ascending=False)
+df.to_csv(out, index=False)
+print(df["class"].value_counts().to_string())
+print("\nTop over-represented (pooled):")
+print(df[df.q_pool < 0.05].sort_values("z_pool", ascending=False).head(10)[
+    ["a", "b", "obs", "null_mean_pool", "z_pool", "z_strat", "class"]].to_string(index=False))
+print("\nTop avoided (pooled):")
+print(df[df.q_pool < 0.05].sort_values("z_pool").head(10)[
+    ["a", "b", "obs", "null_mean_pool", "z_pool", "z_strat", "class"]].to_string(index=False))
 
 
-if __name__ == "__main__":
-    main()

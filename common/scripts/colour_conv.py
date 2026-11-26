@@ -1,7 +1,14 @@
-# This code is authored by Claude, Raghav and Sasanska
+# This code is authored by Claude, Raghav and Sasanka Mouli
 # Used to make node colours as average of the recipes it is connected to and tries to implement polygonal nodes.
 import pandas as pd
 import networkx as nx
+from pathlib import Path
+
+BASE_DIR = Path.cwd().resolve().parent.parent
+DATA_DIR   = BASE_DIR / "common" / "data_processed"
+NODES_FILE = DATA_DIR / "nodes_9.0.csv"
+EDGES_FILE = DATA_DIR / "edges_6.0.csv"
+OUT_DIR = DATA_DIR
 
 def add_viz_shapes(B,
                    shapes={0: "square", 1: "triangle"},   
@@ -21,8 +28,8 @@ def add_viz_shapes(B,
 
 
 
-nodes = pd.read_csv("nodes_8.0.csv")
-edges = pd.read_csv("edges_5.0.csv")
+nodes = pd.read_csv(NODES_FILE)
+edges = pd.read_csv(EDGES_FILE)
 
 B = nx.Graph()
 
@@ -32,9 +39,9 @@ for r in nodes.itertuples():
         r.Id,
         bipartite=0 if r.Type == "Recipe" else 1,
         label=r.Label,
-        cuisine=r.Cuisine,
+        cuisine=str(r.Cuisine) if pd.notna(r.Cuisine) else "",
         type=r.Type,
-        Color=r.Color
+        Color=str(r.Color) if pd.notna(r.Color) else "#CCCCCC"
     )
 
 B.add_edges_from(
@@ -117,4 +124,4 @@ for ingredient in ingredients:
 # Add your existing shapes
 B = add_viz_shapes(B)
 
-nx.write_gexf(B, "recipes_ingredients.gexf")
+nx.write_gexf(B, OUT_DIR / "coloured_recipes_ingredients.gexf")

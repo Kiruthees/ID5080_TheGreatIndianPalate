@@ -4,6 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import networkx as nx
+from pathlib import Path
+
+BASE_DIR = Path.cwd().resolve().parent.parent
+DATA_FILE   = BASE_DIR / "members" / "sasanka mouli" / "cooccurrence_results.csv"
+OUT_DIR = BASE_DIR / "members" / "sasanka mouli" / "figs"
 
 PALETTE = {
     "ns": "#c8c8c8",
@@ -181,21 +186,12 @@ def fig_dumbbell(df, path, top=12):
     fig.tight_layout(); fig.savefig(path); plt.close(fig)
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--results", required=True)
-    a = ap.parse_args()
-    outdir = "figs"
-    os.makedirs(outdir, exist_ok=True)
-    df = pd.read_csv(a.results)
-    out = lambda f: os.path.join(outdir, f)
-    fig_scatter(df, out("ic_pooled_vs_stratified.svg"))
-    fig_obs_exp(df, out("ic_obs_vs_expected.svg"))
-    fig_top_pairs(df, out("ic_top_pairs.svg"))
-    fig_heatmap(df, out("ic_heatmap.svg"))
-    fig_network(df, out("ic_strongest_pairings_modularity.svg"))
-    fig_dumbbell(df, out("ic_regional_vs_masked.svg"))
-
-
-if __name__ == "__main__":
-    main()
+os.makedirs(OUT_DIR, exist_ok=True)
+df = pd.read_csv(DATA_FILE)
+out = lambda f: os.path.join(OUT_DIR, f)
+fig_scatter(df, out("ic_pooled_vs_stratified.svg"))
+fig_obs_exp(df, out("ic_obs_vs_expected.svg"))
+fig_top_pairs(df, out("ic_top_pairs.svg"))
+fig_heatmap(df, out("ic_heatmap.svg"))
+fig_network(df, out("ic_strongest_pairings_modularity.svg"))
+fig_dumbbell(df, out("ic_regional_vs_masked.svg"))
