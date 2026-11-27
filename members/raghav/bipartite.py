@@ -6,9 +6,10 @@ import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-
-
-df = pd.read_csv("ingredient_dish_edges.csv")
+BASE_DIR = Path.cwd().resolve().parent.parent
+DATA_DIR   = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "raghav"
+df = pd.read_csv(DATA_DIR / "ingredient_dish_edges.csv")
 
 B = nx.Graph()
 # Node creation
@@ -87,7 +88,7 @@ for node, data in B.nodes(data=True):
     data["label"] = str(data["name"])
 
 # First export the graph normally
-output_file = "dish_ingredient_bipartite.gexf"
+output_file = OUT_DIR / "dish_ingredient_bipartite.gexf"
 nx.write_gexf(B, output_file)
 
 # Add actual Gephi visualization coordinates to the GEXF XML
@@ -180,5 +181,5 @@ plt.title("Bipartite Dish–Ingredient Network")
 plt.legend()
 plt.axis("off")
 plt.tight_layout()
-plt.savefig("dish_ingredient_sample.png", dpi=200)
+plt.savefig(OUT_DIR / "dish_ingredient_sample.png", dpi=200)
 plt.show()

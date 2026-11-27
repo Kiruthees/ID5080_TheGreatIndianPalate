@@ -1,9 +1,11 @@
 # This code is authored by Raghav 
 import pandas as pd
 import re
+from pathlib import Path
 
-INPUT_FILE = "Dataset2.xlsx"
-OUTPUT_FILE = "ingredient_dish_edges.csv"
+BASE_DIR = Path.cwd().resolve().parent.parent
+INPUT_FILE = BASE_DIR / "common" / "data_raw" / "raw_data.xlsx"
+OUTPUT_FILE = BASE_DIR / "common" / "data_processed" / "ingredient_dish_edges.csv"
 SHEET_NAME = "Cleaned_Indian_Food_Dataset"
 
 # Code to remove incosistencies in ingredient name to lessen the number of ingredients and to increase correlation

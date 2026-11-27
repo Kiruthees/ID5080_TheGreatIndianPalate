@@ -2,9 +2,15 @@ import numpy as np, pandas as pd, networkx as nx, matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
 from networkx.algorithms import bipartite
 from networkx.algorithms.community import louvain_communities
+from pathlib import Path
 
-NODES, EDGES = "nodes_9.0.csv", "edges_6.0.csv"
-OUT = "communities_and_cuisines.png"
+BASE_DIR = Path.cwd().resolve().parent.parent
+DATA_DIR   = BASE_DIR / "common" / "data_processed"
+NODES = DATA_DIR / "nodes_9.0.csv"
+EDGES = DATA_DIR / "edges_6.0.csv"
+OUT_DIR = BASE_DIR / "members" / "rohieth"
+OUT = OUT_DIR / "communities_and_cuisines.png"
+
 MIN_RECIPES = 60          # cuisines shown in heatmap
 N_COMM = 4                # communities to keep
 SEED = 42
