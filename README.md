@@ -1,6 +1,6 @@
 # ID5080 Term Project: Indian recipe-ingredient bipartite network
 
-Team: **The Great Indian Palate** | Project number: **<P0X>**
+Team: **The Great Indian Palate** | Project number: **4**
 
 We analyse Indian dishes as a recipe-ingredient bipartite network: a recipe node is linked to every ingredient it uses. This folder rebuilds every number and figure in the report. Start here, then see `MANIFEST.md` for every file.
 
