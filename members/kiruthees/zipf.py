@@ -13,7 +13,7 @@ def find_root():
 
 BASE_DIR = find_root()
 DATA_DIR = BASE_DIR / "common" / "data_processed"
-
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
 de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 # ingredient counts and ranks
