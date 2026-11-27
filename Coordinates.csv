@@ -1,0 +1,41 @@
+Region_ID,Cuisine,Latitude,Longitude,Reference_Hub
+I,Indian,23.5,78.5,Geographic Center
+A,North Indian Recipes,27,80,Mean Center (Kashmir to CG)
+A2,Kashmiri,34.0837,74.7973,Srinagar
+A3,Himachal,32.218,77.4126,HP State Centroid
+A4,Haryana,29.06,76.5,Haryana State Centroid
+A5,Punjabi,31.1471,75.3412,Punjab State Centroid
+A6,Uttar Pradesh,26.4498,80.3365,Kanpur (State Representative)
+A6.1,Awadhi,26.7922,82.1998,Ayodhya
+A6.2,Lucknowi,26.8467,80.9462,Lucknow City
+B1,Rajasthani,27.0238,74.2179,Rajasthan State Centroid
+B2,Sindhi,24,69,Sindh Region Centroid
+B3,Gujarati Recipes,22.2583,71.1924,Gujarat State Centroid
+B3,Gujarati Recipes,22.2583,71.1924,Gujarat State Centroid
+B4,Maharashtrian Recipes,19.7515,75.7139,Maharashtra State Centroid
+B5,Konkan,16,73.5,Konkan Coastline Center
+B6,Goan Recipes,15.2993,74.124,Goa State Centroid
+C,North East India Recipes,26.5,93,Mean Center (7 Sisters)
+C1,Assamese,26.5,91,Western Assam Shift
+D1,Bihari,25.0961,85.3131,Bihar State Centroid
+D2,Jharkhand,23.6102,85.2799,Jharkhand State Centroid
+D3,Bengali Recipes,22.9868,87.855,West Bengal State Centroid
+D4,Oriya Recipes,20.9517,85.0985,Odisha State Centroid
+E,South Indian Recipes,13,78,Mean Center (South of Goa/Andhra)
+E1,Karnataka,15.3173,75.7139,Karnataka State Centroid
+E1.2,Coorg,12.3333,75.4667,Madikeri
+E1.3,Mangalorean,12.9141,74.856,Mangalore City
+E1.4,North Karnataka,16,75,North Kar. Interior
+E1.5,South Karnataka,12.2958,76.6394,Mysore City
+E1.6,Udupi,13.3409,74.7421,Udupi City
+E2,Andhra,15.9129,79.8145,Andhra State Centroid
+E2.1,Hyderabadi,17.385,78.4867,Hyderabad City
+E3,Kerala Recipes,8.5241,76.9366,Trivandrum
+E3.1,Malabar,11.2588,75.7885,Kozhikode
+E4,Tamil Nadu,11.1271,78.6569,TN State Centroid
+E4.1,Chettinad,9.5,79,Chettinad Center
+E4.2,Kongunadu,11.0168,76.9558,Coimbatore City
+1,Nagaland,25.8,94.1,Kohima
+2,Malvani,16.5,73.4,Sindhudurg
+3,Uttarakhand-North Kumaon,29.5,79.5,Almora
+4,Parsi food,30.1,71.5,Multan

@@ -1,0 +1,99 @@
+Source,Target,Weight
+Karnataka,Maharashtrian Recipes,3
+Karnataka,Bengali Recipes,1
+Karnataka,Tamil Nadu,2
+Karnataka,Kashmiri,1
+Karnataka,Kerala Recipes,1
+Karnataka,Indian,10
+Karnataka,South Indian Recipes,10
+Karnataka,Rajasthani,1
+Karnataka,North Indian Recipes,6
+Karnataka,Bihari,1
+Karnataka,Parsi Recipes,1
+Goan Recipes,Maharashtrian Recipes,2
+Goan Recipes,Tamil Nadu,2
+Goan Recipes,Kerala Recipes,1
+Goan Recipes,Assamese,1
+Goan Recipes,Indian,4
+Goan Recipes,South Indian Recipes,1
+Gujarati Recipes,Maharashtrian Recipes,5
+Gujarati Recipes,Bengali Recipes,1
+Gujarati Recipes,Kashmiri,1
+Gujarati Recipes,Indian,6
+Gujarati Recipes,Himachal,2
+Gujarati Recipes,South Indian Recipes,3
+Gujarati Recipes,North Indian Recipes,5
+Gujarati Recipes,Punjabi,1
+Hyderabadi,Tamil Nadu,1
+Hyderabadi,Indian,2
+Hyderabadi,South Indian Recipes,1
+Hyderabadi,Rajasthani,1
+Hyderabadi,North Indian Recipes,1
+South Indian Recipes,Maharashtrian Recipes,8
+South Indian Recipes,Kerala Recipes,8
+South Indian Recipes,Rajasthani,1
+South Indian Recipes,North Indian Recipes,19
+South Indian Recipes,Punjabi,2
+South Indian Recipes,Andhra,2
+South Indian Recipes,North East India Recipes,2
+South Indian Recipes,Bengali Recipes,2
+South Indian Recipes,Tamil Nadu,10
+South Indian Recipes,Indian,31
+South Indian Recipes,Uttar Pradesh,1
+South Indian Recipes,Bihari,2
+South Indian Recipes,Parsi Recipes,3
+Rajasthani,Assamese,1
+Rajasthani,Indian,6
+Rajasthani,Punjabi,2
+Rajasthani,North Indian Recipes,8
+Rajasthani,Parsi Recipes,1
+North Indian Recipes,Maharashtrian Recipes,18
+North Indian Recipes,Kerala Recipes,4
+North Indian Recipes,Parsi Recipes,3
+North Indian Recipes,Oriya Recipes,2
+North Indian Recipes,Punjabi,11
+North Indian Recipes,North East India Recipes,1
+North Indian Recipes,Bengali Recipes,12
+North Indian Recipes,Tamil Nadu,2
+North Indian Recipes,Kashmiri,3
+North Indian Recipes,Indian,59
+North Indian Recipes,Himachal,2
+North Indian Recipes,Uttar Pradesh,2
+North Indian Recipes,Bihari,3
+North Indian Recipes,Andhra,2
+Oriya Recipes,Assamese,1
+Oriya Recipes,Bengali Recipes,2
+North East India Recipes,Bengali Recipes,1
+North East India Recipes,Tamil Nadu,1
+North East India Recipes,Indian,2
+Tamil Nadu,Maharashtrian Recipes,2
+Tamil Nadu,Bengali Recipes,2
+Tamil Nadu,Kerala Recipes,2
+Tamil Nadu,Indian,7
+Tamil Nadu,Parsi Recipes,1
+Kashmiri,Indian,4
+Kashmiri,Himachal,1
+Kashmiri,Punjabi,1
+Kashmiri,Parsi Recipes,1
+Assamese,Bengali Recipes,1
+Assamese,Kerala Recipes,1
+Assamese,Indian,3
+Assamese,Parsi Recipes,1
+Indian,Maharashtrian Recipes,16
+Indian,Kerala Recipes,9
+Indian,Parsi Recipes,7
+Indian,Punjabi,8
+Indian,Bengali Recipes,17
+Indian,Himachal,1
+Indian,Uttar Pradesh,3
+Indian,Andhra,2
+Uttar Pradesh,Bengali Recipes,1
+Uttar Pradesh,Punjabi,2
+Parsi Recipes,Bengali Recipes,1
+Parsi Recipes,Kerala Recipes,1
+Maharashtrian Recipes,Bengali Recipes,1
+Maharashtrian Recipes,Kerala Recipes,2
+Maharashtrian Recipes,Punjabi,4
+Kerala Recipes,Bengali Recipes,2
+Kerala Recipes,Punjabi,1
+Kerala Recipes,Bihari,1
