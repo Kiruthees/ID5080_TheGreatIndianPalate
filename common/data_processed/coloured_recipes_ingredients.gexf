@@ -53472,7 +53472,7 @@
           <attvalue for="4" value="3" />
         </attvalues>
       </node>
-      <node id="food colour" label="food colour">
+      <node id="food color" label="food color">
         <viz:color r="204" g="204" b="204" a="1.0" />
         <viz:size value="10.0" />
         <viz:shape value="triangle" />
@@ -62399,7 +62399,7 @@
       <edge source="D00237" target="milk" id="8370" />
       <edge source="D00237" target="ghee" id="8371" />
       <edge source="D00237" target="condensed milk" id="8372" />
-      <edge source="D00237" target="food colour" id="8373" />
+      <edge source="D00237" target="food color" id="8373" />
       <edge source="D00237" target="saffron" id="8374" />
       <edge source="D00237" target="white vinegar" id="8375" />
       <edge source="D00237" target="pistachios" id="8376" />
@@ -63251,7 +63251,7 @@
       <edge source="D00793" target="sugar" id="9222" />
       <edge source="D00793" target="khoya" id="9223" />
       <edge source="D00793" target="cardamom" id="9224" />
-      <edge source="D00793" target="food colour" id="9225" />
+      <edge source="D00793" target="food color" id="9225" />
       <edge source="D00793" target="fruit jam" id="9226" />
       <edge source="D00793" target="ghee" id="9227" />
       <edge source="D00793" target="thandai masala" id="9228" />
@@ -66228,7 +66228,7 @@
       <edge source="D02548" target="badam" id="12199" />
       <edge source="D02548" target="mango" id="12200" />
       <edge source="D02553" target="sugar" id="12201" />
-      <edge source="D02553" target="food colour" id="12202" />
+      <edge source="D02553" target="food color" id="12202" />
       <edge source="D02553" target="water" id="12203" />
       <edge source="D02553" target="flour" id="12204" />
       <edge source="D02553" target="food color" id="12205" />
@@ -84905,7 +84905,7 @@
       <edge source="D03531" target="sunflower oil" id="30876" />
       <edge source="D03531" target="ginger" id="30877" />
       <edge source="D03545" target="milk" id="30878" />
-      <edge source="D03545" target="food colour" id="30879" />
+      <edge source="D03545" target="food color" id="30879" />
       <edge source="D03545" target="butter" id="30880" />
       <edge source="D03545" target="sugar" id="30881" />
       <edge source="D03545" target="cardamom" id="30882" />

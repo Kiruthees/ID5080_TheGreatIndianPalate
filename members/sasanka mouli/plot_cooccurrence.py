@@ -167,7 +167,7 @@ def fig_network(df, path, min_z=12, max_edges=150):
     
     ax.set_axis_off()
     ax.set_title(f"Strongest cuisine-independent pairings ({G.number_of_edges()} pairs with z ≥ {min_z} "
-                 f"under both nulls)\nnode size = #partners, colour = greedy-modularity community "
+                 f"under both nulls)\nnode size = #partners, color = greedy-modularity community "
                  f"({len(comms)} groups)")
     fig.savefig(path)
     plt.close(fig)

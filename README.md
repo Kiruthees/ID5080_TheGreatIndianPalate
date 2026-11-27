@@ -15,7 +15,7 @@ figure/            final network figure options (TGIP_1..4.svg)
 common/
   data_raw/        raw_data.xlsx, exactly as collected, never edited
   data_processed/  what the scripts produce from data_raw (plus the hand-cleaned final tables)
-  scripts/         shared pipeline: cvtr.py, cleaning.ipynb, colour_conv.py
+  scripts/         shared pipeline: cvtr.py, cleaning.ipynb, color_conv.py
 members/           one folder per person: their notebooks, scripts and outputs
 ```
 
@@ -40,15 +40,17 @@ jupyter nbconvert --to notebook --execute --inplace members/raghav/percolation.i
 
 ## 3. Build the data (run in this order)
 
-| Step | Script | Reads | Writes | Time |
-|---|---|---|---|---|
-| 1 | `common/scripts/cvtr.py` | `common/data_raw/raw_data.xlsx` (sheet `Cleaned_Indian_Food_Dataset`) | `common/data_processed/ingredient_dish_edges.csv` | 3 s |
-| 2 | `common/scripts/cleaning.ipynb` | `ingredient_dish_edges.csv` | `nodes_intermediate.csv`, `edges_intermediate.csv` | 3 s |
-| 3 | **Manual Cleaning** | the two intermediate files | `nodes_9.0.csv`, `edges_6.0.csv` | >20h |
+| Step | Script                                 | Reads                                               | Writes                                                 | Time |
+| ---- | -------------------------------------- | --------------------------------------------------- | ------------------------------------------------------ | ---- |
+| 1    | `common/scripts/cvtr.py`               | `common/data_raw/raw_data.xlsx`                     | `common/data_processed/ingredient_dish_edges.csv`      | 3 s  |
+| 2    | `common/scripts/cleaning.ipynb`        | `ingredient_dish_edges.csv`                         | `nodes_intermediate.csv`, `edges_intermediate.csv`     | 3 s  |
+| 3    | **Coloring**                           | `nodes_intermediate.csv`                            | `common/data_processed/nodes_intermediate_colored.csv` | 5 m  |
+| 4    | `common/scripts/coordinates_merger.py` | `nodes_intermediate_colored.csv`, `coordinates.csv` | `common/data_processed/nodes_lats_colored.csv`         | 10 s |
+| 5    | **Manual Cleaning**                    | `nodes_lats_colored.csv`, `edges_intermediate.csv`  | `nodes_9.0.csv`, `edges_6.0.csv`                       | >20h |
 
-Steps 1 and 2 were re-run on a fresh checkout and reproduce the committed files exactly (the CSV line endings may differ by operating system).
+Steps 1, 2 and 4 were re-run on a fresh checkout and reproduce the committed files exactly (the CSV line endings may differ by operating system).
 
-**Step 3 is not scripted.** `nodes_9.0.csv` and `edges_6.0.csv` are committed as the final source data and every analysis below starts from them.
+**Steps 3 and 5 are not scripted.** `nodes_intermediate_colored.csv` was generated using an LLM, and `nodes_9.0.csv` and `edges_6.0.csv` are committed as the final source data and every analysis below starts from them.
 
 Raw data source: Indian Food Recipes Dataset (Cleaned Version) from Kaggle - https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset
 
@@ -56,24 +58,24 @@ Raw data source: Indian Food Recipes Dataset (Cleaned Version) from Kaggle - htt
 
 All of these read `nodes_9.0.csv` and `edges_6.0.csv` from `common/data_processed/` unless stated.
 
-| Analysis | Script | Output | Time |
-|---|---|---|---|
-| Initial bipartite network and sample plot | `members/raghav/bipartite.py` (reads `ingredient_dish_edges.csv`) | `dish_ingredient_bipartite.gexf`, `dish_ingredient_sample.png` | 6 s |
-| Ingredient co-occurrence null-model test | `members/sasanka mouli/cooccurrence_test.py` | `cooccurrence_results.csv` | about 90 s |
-| Co-occurrence figures | `members/sasanka mouli/plot_cooccurrence.py` (run after the test) | `figs/ic_*.svg` (six figures) | 3 s |
-| Bipartite model comparison (ER, WS, BA, HK, DP) | `members/nivetha/Bipartite_ModelComparisons.ipynb` | metric CSVs, PNGs and `*_butterfly_*.gexf` in the same folder | about 7 min  |
-| Robustness and percolation | `members/raghav/percolation.ipynb` | one-mode projections, percolation CSVs, `.gexf` files | about 10 s |
-| Correlation and assortativity | `members/mizal/correlation.ipynb` (reads `edges_6.0.csv`) | `save.png`, `save2.png`, `save3.png` | about 2.5 min  |
-| Colouring ingredient nodes by average recipe colour | `common/scripts/colour_conv.py` | `common/data_processed/coloured_recipes_ingredients.gexf` | 1 s |
-| Ingredient prevalence across cuisines | `members/raghav/analysis.ipynb` | plot inside the notebook. **Asks for an ingredient name at run time (`input()`), so it cannot run unattended.** | instant |
-| Ingredient-family prevalence by region | `members/rohieth/analysis2.ipynb` | five family PNGs in `members/rohieth/` | 11 s |
-| Louvain communities and their cuisine prevalence | `members/rohieth/communities.py` | `communities_and_cuisines.png` | 12 s |
-| Ingredient communities (Jaccard backbone, Louvain) | `members/kiruthees/community_detec.py` | `masala_ingredient_communities.png` | 1 s |
-| Cuisine specificity (lift) and regional signatures | `members/kiruthees/cuisine_specificity.py` | `masala_cuisine_lift_clean.png`, `masala_regional_signatures.png` | 3 s |
-| Degree distributions and power-law fits | `members/kiruthees/degree_dist.py` (imports the local `members/kiruthees/power_law.py`; `SPLIT_FIGS = True`) | `masala_degrees_powerlaw.png`, `masala_recipe_complexity.png` | 2 s |
-| Power-law validation (PDF, CCDF, Clauset MLE) | `members/kiruthees/power_law.py` | `masala_power_law_validation.png` | 1 s |
-| Zipf-Mandelbrot fit of ingredient usage | `members/kiruthees/zipf.py` | `masala_zipf_mandelbrot.png` | 2 s |
-| Power couples, effort meter, recipe complexity tiers | `members/kiruthees/last_metrics.py` | `masala_intuitive_metrics.png` | 1 s |
+| Analysis                                             | Script                                                                                                       | Output                                                                                                          | Time          |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------- |
+| Initial bipartite network and sample plot            | `members/raghav/bipartite.py` (reads `ingredient_dish_edges.csv`)                                            | `dish_ingredient_bipartite.gexf`, `dish_ingredient_sample.png`                                                  | 6 s           |
+| Ingredient co-occurrence null-model test             | `members/sasanka mouli/cooccurrence_test.py`                                                                 | `cooccurrence_results.csv`                                                                                      | about 90 s    |
+| Co-occurrence figures                                | `members/sasanka mouli/plot_cooccurrence.py` (run after the test)                                            | `figs/ic_*.svg` (six figures)                                                                                   | 3 s           |
+| Bipartite model comparison (ER, WS, BA, HK, DP)      | `members/nivetha/Bipartite_ModelComparisons.ipynb`                                                           | metric CSVs, PNGs and `*_butterfly_*.gexf` in the same folder                                                   | about 7 min   |
+| Robustness and percolation                           | `members/raghav/percolation.ipynb`                                                                           | one-mode projections, percolation CSVs, `.gexf` files                                                           | about 10 s    |
+| Correlation and assortativity                        | `members/mizal/correlation.ipynb` (reads `edges_6.0.csv`)                                                    | `save.png`, `save2.png`, `save3.png`                                                                            | about 2.5 min |
+| coloring ingredient nodes by average recipe color    | `common/scripts/color_conv.py`                                                                               | `common/data_processed/colored_recipes_ingredients.gexf`                                                        | 1 s           |
+| Ingredient prevalence across cuisines                | `members/raghav/analysis.ipynb`                                                                              | plot inside the notebook. **Asks for an ingredient name at run time (`input()`), so it cannot run unattended.** | instant       |
+| Ingredient-family prevalence by region               | `members/rohieth/analysis2.ipynb`                                                                            | five family PNGs in `members/rohieth/`                                                                          | 11 s          |
+| Louvain communities and their cuisine prevalence     | `members/rohieth/communities.py`                                                                             | `communities_and_cuisines.png`                                                                                  | 12 s          |
+| Ingredient communities (Jaccard backbone, Louvain)   | `members/kiruthees/community_detec.py`                                                                       | `masala_ingredient_communities.png`                                                                             | 1 s           |
+| Cuisine specificity (lift) and regional signatures   | `members/kiruthees/cuisine_specificity.py`                                                                   | `masala_cuisine_lift_clean.png`, `masala_regional_signatures.png`                                               | 3 s           |
+| Degree distributions and power-law fits              | `members/kiruthees/degree_dist.py` (imports the local `members/kiruthees/power_law.py`; `SPLIT_FIGS = True`) | `masala_degrees_powerlaw.png`, `masala_recipe_complexity.png`                                                   | 2 s           |
+| Power-law validation (PDF, CCDF, Clauset MLE)        | `members/kiruthees/power_law.py`                                                                             | `masala_power_law_validation.png`                                                                               | 1 s           |
+| Zipf-Mandelbrot fit of ingredient usage              | `members/kiruthees/zipf.py`                                                                                  | `masala_zipf_mandelbrot.png`                                                                                    | 2 s           |
+| Power couples, effort meter, recipe complexity tiers | `members/kiruthees/last_metrics.py`                                                                          | `masala_intuitive_metrics.png`                                                                                  | 1 s           |
 
 Times for the scripts above were measured on one machine.
 

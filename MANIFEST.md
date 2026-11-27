@@ -30,9 +30,11 @@ Every file, one line each: what it is and which script made it. Filename pattern
 | `ingredient_dish_edges.csv` | One row per recipe-ingredient pair (71,981 rows), from the raw sheet | `common/scripts/cvtr.py` |
 | `nodes_intermediate.csv` | Recipe and ingredient nodes after scripted cleaning | `common/scripts/cleaning.ipynb` |
 | `edges_intermediate.csv` | Recipe-ingredient edges after scripted cleaning | `common/scripts/cleaning.ipynb` |
+| `nodes_intermediate_colored.csv` | Same as `nodes_intermediate.csv`, but colored | LLM + Manual |
+| `nodes_lats_colored.csv` | Same as `nodes_intermediate.csv`, but colored and with coordinates | `common/scripts/coordinates_merger.py` |
 | `nodes_9.0.csv` | **Final node table** (Type, Cuisine, ...) used by every analysis | manual cleaning of `nodes_intermediate.csv` by Mizal (no script) |
 | `edges_6.0.csv` | **Final edge table** (Source = recipe, Target = ingredient, 47,376 rows, 3,933 recipes) used by every analysis | manual cleaning of `edges_intermediate.csv` by Mizal (no script) |
-| `coloured_recipes_ingredients.gexf` | Bipartite graph with ingredient nodes coloured by the average colour of their recipes | `common/scripts/colour_conv.py` |
+| `colored_recipes_ingredients.gexf` | Bipartite graph with ingredient nodes colored by the average color of their recipes | `common/scripts/color_conv.py` |
 | `.gitkeep` | Keeps the folder in git | n/a |
 
 ## common/scripts/
@@ -41,7 +43,7 @@ Every file, one line each: what it is and which script made it. Filename pattern
 |---|---|---|
 | `cvtr.py` | Converts `raw_data.xlsx` into `ingredient_dish_edges.csv` | written by team |
 | `cleaning.ipynb` | Scripted cleaning and name merging, produces the intermediate node and edge files | written by team |
-| `colour_conv.py` | Builds the coloured bipartite graph | written by team |
+| `color_conv.py` | Builds the colored bipartite graph | written by team |
 | `.gitkeep` | Keeps the folder in git | n/a |
 
 ## members/kiruthees/

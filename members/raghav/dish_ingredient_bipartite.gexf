@@ -63950,11 +63950,11 @@
           <attvalue for="5" value="-74350.0" />
         </attvalues>
       <viz:position x="500.0" y="-74350.0" z="0.0" /></node>
-      <node id="ING::or 2 yellow food colour" label="or 2 yellow food colour">
+      <node id="ING::or 2 yellow food color" label="or 2 yellow food color">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="or 2 yellow food colour" />
+          <attvalue for="2" value="or 2 yellow food color" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="-18650.0" />
         </attvalues>
@@ -67289,11 +67289,11 @@
           <attvalue for="5" value="-66550.0" />
         </attvalues>
       <viz:position x="500.0" y="-66550.0" z="0.0" /></node>
-      <node id="ING::green food colour" label="green food colour">
+      <node id="ING::green food color" label="green food color">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="green food colour" />
+          <attvalue for="2" value="green food color" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="20950.0" />
         </attvalues>
@@ -71987,11 +71987,11 @@
           <attvalue for="5" value="-15050.0" />
         </attvalues>
       <viz:position x="500.0" y="-15050.0" z="0.0" /></node>
-      <node id="ING::pinch yellow food colour" label="pinch yellow food colour">
+      <node id="ING::pinch yellow food color" label="pinch yellow food color">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="pinch yellow food colour" />
+          <attvalue for="2" value="pinch yellow food color" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="-31750.0" />
         </attvalues>
@@ -72491,11 +72491,11 @@
           <attvalue for="5" value="-50150.0" />
         </attvalues>
       <viz:position x="500.0" y="-50150.0" z="0.0" /></node>
-      <node id="ING::del monte tricolour spirali pasta" label="del monte tricolour spirali pasta">
+      <node id="ING::del monte tricolor spirali pasta" label="del monte tricolor spirali pasta">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="del monte tricolour spirali pasta" />
+          <attvalue for="2" value="del monte tricolor spirali pasta" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="44550.0" />
         </attvalues>
@@ -73796,11 +73796,11 @@
           <attvalue for="5" value="38450.0" />
         </attvalues>
       <viz:position x="500.0" y="38450.0" z="0.0" /></node>
-      <node id="ING::yellow food colour" label="yellow food colour">
+      <node id="ING::yellow food color" label="yellow food color">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="yellow food colour" />
+          <attvalue for="2" value="yellow food color" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="-102850.0" />
         </attvalues>
@@ -76415,11 +76415,11 @@
           <attvalue for="5" value="-50350.0" />
         </attvalues>
       <viz:position x="500.0" y="-50350.0" z="0.0" /></node>
-      <node id="ING::pink food colour" label="pink food colour">
+      <node id="ING::pink food color" label="pink food color">
         <attvalues>
           <attvalue for="0" value="1" />
           <attvalue for="1" value="ingredient" />
-          <attvalue for="2" value="pink food colour" />
+          <attvalue for="2" value="pink food color" />
           <attvalue for="4" value="500.0" />
           <attvalue for="5" value="-32350.0" />
         </attvalues>
@@ -92770,7 +92770,7 @@
           <attvalue for="6" value="1 cup" />
         </attvalues>
       </edge>
-      <edge source="D00237" target="ING::or 2 yellow food colour" id="2916">
+      <edge source="D00237" target="ING::or 2 yellow food color" id="2916">
         <attvalues>
           <attvalue for="6" value="1" />
         </attvalues>
@@ -125330,7 +125330,7 @@
           <attvalue for="6" value="1/2 teaspoon" />
         </attvalues>
       </edge>
-      <edge source="D00793" target="ING::green food colour" id="9428">
+      <edge source="D00793" target="ING::green food color" id="9428">
         <attvalues>
           <attvalue for="6" value="nan" />
         </attvalues>
@@ -228930,7 +228930,7 @@
           <attvalue for="6" value="3/4 cup" />
         </attvalues>
       </edge>
-      <edge source="D02553" target="ING::pinch yellow food colour" id="30148">
+      <edge source="D02553" target="ING::pinch yellow food color" id="30148">
         <attvalues>
           <attvalue for="6" value="1" />
         </attvalues>
@@ -243945,7 +243945,7 @@
           <attvalue for="6" value="2 tablespoons" />
         </attvalues>
       </edge>
-      <edge source="D02808" target="ING::del monte tricolour spirali pasta" id="33151">
+      <edge source="D02808" target="ING::del monte tricolor spirali pasta" id="33151">
         <attvalues>
           <attvalue for="6" value="300 grams" />
         </attvalues>
@@ -271775,7 +271775,7 @@
           <attvalue for="6" value="as required" />
         </attvalues>
       </edge>
-      <edge source="D03287" target="ING::pinch yellow food colour" id="38717">
+      <edge source="D03287" target="ING::pinch yellow food color" id="38717">
         <attvalues>
           <attvalue for="6" value="1" />
         </attvalues>
@@ -287045,7 +287045,7 @@
           <attvalue for="6" value="2 tablespoons" />
         </attvalues>
       </edge>
-      <edge source="D03545" target="ING::yellow food colour" id="41771">
+      <edge source="D03545" target="ING::yellow food color" id="41771">
         <attvalues>
           <attvalue for="6" value="nan" />
         </attvalues>
@@ -369915,7 +369915,7 @@
           <attvalue for="6" value="1/4 cup" />
         </attvalues>
       </edge>
-      <edge source="D04951" target="ING::pink food colour" id="58345">
+      <edge source="D04951" target="ING::pink food color" id="58345">
         <attvalues>
           <attvalue for="6" value="1 teaspoon" />
         </attvalues>
@@ -373545,7 +373545,7 @@
           <attvalue for="6" value="3" />
         </attvalues>
       </edge>
-      <edge source="D05011" target="ING::green food colour" id="59071">
+      <edge source="D05011" target="ING::green food color" id="59071">
         <attvalues>
           <attvalue for="6" value="1/2 teaspoon" />
         </attvalues>

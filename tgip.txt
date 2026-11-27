@@ -1,0 +1,558 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{geometry} % For adjusting page margins
+\geometry{margin=1in}
+\usepackage{float}% Forces images to stay in place using [H]
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{textgreek}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+
+
+\title{The Great Indian Palate}
+\author{Mohammed Mizal K, Rohieth Raj S,Raghav Y, Kiruthees G, Sasanka Mouli G, Add your names here}
+\date{November 2026}
+
+\begin{document}
+\pagenumbering{roman}
+
+% --- Full Page Title ---
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Large ID 5080 | Complex Networks \par}
+    {\Large Project Report \par}
+    {\Large Project Number Four \par}
+    \vspace{2.0cm}
+    {\Huge\bfseries The Great Indian Palate \par}
+    \vspace{0.5cm}
+    {\Large \href{https://github.com/Kiruthees/ID5080_TheGreatIndianPalate}{\textit{Our Github Repository}} \par}
+
+
+    \vfill
+    {\Large ME23B246 - Kiruthees G \par}
+    \vspace{0.8cm}
+    {\Large BS23B032 - Mohammed Mizal Kodakkadan \par}
+    \vspace{0.8cm}
+    {\Large MD26S002 - Nivetha P \par}
+    \vspace{0.8cm}
+    {\Large ME23B059 - Raghav Y \par}
+    \vspace{0.8cm}
+    {\Large CH25D404 - Rohieth Raj S \par}
+    \vspace{0.8cm}
+    {\Large DA25B013 - Sasanka Mouli G \par}
+    \vspace{0.8cm}    
+    \vspace{0.8cm}
+        {\large July-November 2026 Semester \par}
+    {\large \itshape Indian Institute of Technology, Madras \par}
+    \vspace{2cm}
+\end{titlepage}
+
+\onecolumn
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\twocolumn
+
+% --- Body Section 1 ---
+\section{Introduction|The Network}
+
+    The network we built is a representation of the ingredients used in the preparation of popular dishes in major Indian cuisines. Our base network is bipartite; with the cuisines \emph{(Kashmiri, Mughlai, Gujarati)} and ingredients as nodes. An edge is always between a cuisine and an ingredient, and the edge weights signify the frequency of an ingredient in a given cuisine. We then project the graph onto cuisines and ingredients to obtain the respective one-mode projections. Nodes in a 'cuisines projection' represent the distinct Indian cuisines in our dataset and an edge between them indicates a shared ingredient, weighted by the number of shared ingredients, and vice-versa for the ingredient projection. This representation was unanimously agreed by the team as the most elegant form. The only alternative that crept up into the discussions was a possibility to replace the individual ingredients with a collective ingredient-type, such as \emph{'spices', 'fruits', 'grains',} etc. Such an idea was however, immediately dismissed to avoid ambiguity and bias in the ingredient groupings and in an attempt to preserve information in the base network.
+
+
+
+\section{Data Collection}
+    Our \href{https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset?resource=download}{\textit{primary dataset}} comprises of around 6000 recipes obtained from an open-source website called \href{https://www.kaggle.com/}{\textit{kaggle}}. The dataset itself is a cleaned version that simplifies data processing from the original | \href{https://www.kaggle.com/datasets/sukhmandeepsinghbrar/indian-food-dataset/data}{\textit{Indian Food Dataset}}. The dataset was downloaded as a csv file after the requirement of free kaggle sign-in. Although slightly old, we obtained data on the cooking instructions, ingredients, estimated cooking time, cuisine it belonged to and the reference URL for each recipe.
+
+
+
+\section{Data Processing}
+    The downloaded dataset required multiple processing, some of which were forced later on due to errors in the initial attempts. Our goal was to convert the dataset into a standard edge-list listing each edge between a recipe and its ingredients.\\
+    The sheer volume of the dataset proved to be the biggest challenge in this process, followed by ingredient redundancies, which were a consequence of: linguistic differences, different forms of the same ingredient, whitespace differences, spelling mistakes and a few cleaning flaws (such as measurements attached to the ingredients: \emph{sugar} vs \emph{1tbsp sugar}). The redundancies in the dataset resulted in duplicate nodes which, in addition to further cluttering the graph, split an ingredient's importance significantly.
+
+    \subsection{Setting the standards}
+        Standardizing the ingredient names was one of the biggest decisions we had to make, one that also caused a lot of discussion. The specific form of an ingredient makes a key difference in a dish's preparation, yet it splits its importance and misleads the analysis, such as wheat vs wheat flour, table salt vs rock salt and sugar vs sugar syrup. Certain differences however, such as leaves and roots of the same plant, dramatically influence the dish. \textit{"Where do we draw the line?"} was the most important question we faced, one that was foundational to any further analysis. In the end, the team reached consensus on the following:
+        \begin{itemize}
+          \item We reverted most powders and pastes back to their native ingredients as they can be seen as a processing step and not a different source ingredient.
+          \item Different parts of a plant and different varieties of it were considered separately as that is not a difference that could be compensated in the kitchen. 
+          \item We chose to keep factory processed ingredients, such as masala mixes, spring roll sheets, gulab jamun since they too are not usually made in the kitchen (as an ingredient for another dish), and since further factorisations of such ingredients demanded a more intense level of involvement.
+        \end{itemize}
+        These decisions were agreed upon as to make the most sense for the questions we intended to ask to the network. Different approaches to the problem may require different normalizing standards.
+    
+    \subsection{The Filtering and Cleaning Process}
+        The first step towards processing the code was converting the raw data in the form of procedures to a csv file of ingredients and recipes. The python script 'cvtr.py' parses the same to form the nodes and edges and it also takes care of most of the common spelling variations and quantitative information \textit{(like litres and teaspoons)}. Two files were made, one nodes file - containing all node properties, and an edges file which contains all the links.\\
+        
+        The nodes and edge files were then used for network analysis. However, during the analysis, some data discrepancies were very evident, which forced us to revisit the files and a long, tedious manual cleaning followed. The manual process was conducted on the edges file with aid from \textit{LibreOffice Calc}'s 'Find and Replace' tool, with the changes being carried over into the nodes file using the 'nodes cleaner' python script. This was an iterative process that required frequent revisits on the discovery of new errors, the final nodes file (nodes 9.0) is about the nineth iteration of cleaning. We still suspect a few errors in the final data which may be negligible.
+
+    \subsection{Projections, Coordinates and colors}
+        The completely processed nodes and edge files were used to obtain the one-mode projections onto the recipes, cuisines and ingredients. The nodes file was also modified to include separate columns with colors and coordinates specified as node properties corresponding to the respective cuisines. The coordinates were obtained as a CSV file using the help of AI. This was to better represent the network visually on Gephi Software. All of these modifications were performed using python scripts.
+
+
+
+\section{Codes and Data}
+    All of our data and scripts used to analyse it can be found in \href{https://github.com/Kiruthees/ID5080_TheGreatIndianPalate}{this github repository}. Table~\ref{tab:data_guide} provides a comprehensive guide to the Data Folder.
+    
+\begin{table*}[!t]
+    \centering
+    \scriptsize
+    \renewcommand{\arraystretch}{1.12}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{0.032\textwidth}|>{\raggedright\arraybackslash}p{0.29\textwidth}|>{\raggedright\arraybackslash}p{0.32\textwidth}|>{\raggedright\arraybackslash}p{0.095\textwidth}|>{\raggedright\arraybackslash}p{0.19\textwidth}|}
+    \hline
+    No. & Filename(s) & Details & Size & Parent / Daughter \\
+    \hline
+        \multicolumn{5}{|l|}{\textit{common/data\_raw/ \& common/data\_processed/}}\\ \hline
+        1 & \texttt{raw\_data.xlsx} & Raw recipe--ingredient dataset (\texttt{Cleaned\_\allowbreak Indian\_\allowbreak Food\_\allowbreak Dataset}) & 4.25 MB & P: external \newline D: \texttt{cvtr.py} \\ \hline
+        2 & \texttt{ingredient\_dish\_edges.csv} & Unfiltered recipe--ingredient pairs (71,981 rows) & 6.27 MB & P: \texttt{cvtr.py} \newline D: \texttt{cleaning.ipynb}, \texttt{bipartite.py} \\ \hline
+        3--4 & \texttt{nodes\_intermediate.csv}\newline \texttt{edges\_intermediate.csv} & Post-scripted cleaning tables (5,242 nodes; 47,402 edges) & 167, 414 KB & P: \texttt{cleaning.ipynb} \newline D: manual cleaning \\ \hline
+        5--6 & \texttt{nodes\_9.0.csv}, \texttt{edges\_6.0.csv} & \textbf{Final tables}: 3,933 recipes, 568 ingredients (4,501 nodes; 47,376 edges) & 403, 830 KB & P: manual cleaning \newline D: all analysis scripts \\ \hline
+        7 & \texttt{colored\_recipes\_ingredients.gexf} & Bipartite graph; ingredient nodes colored by mean recipe color & 4.99 MB & P: \texttt{color\_conv.py} \newline D: Gephi \\ \hline
+        \multicolumn{5}{|l|}{\textit{members/nivetha/}}\\ \hline
+        8--9 & \texttt{all\_runs.csv}\newline \texttt{metric\_\{means,sds\}.csv}\newline \texttt{metric\_summary\_mean\_pm\_sd.csv} & Metrics across 101 runs and 17-row summaries for Original, ER, WS, BA, HK, and DP models & 26.1 KB;\newline 2.0--2.2 KB & P: \texttt{Bipartite\_\allowbreak ModelComparisons.ipynb} \\ \hline
+        10--11 & \texttt{\{Original,ER,WS,BA,HK,DP\}\_\allowbreak butterfly\_\{allnodes,coord3\}.gexf} & Full and reduced Gephi graphs for each null/generative model (6 files each) & 8.54--8.66 MB;\newline 112--368 KB & P: \texttt{Bipartite\_\allowbreak ModelComparisons.ipynb}\newline D: Gephi \\ \hline
+        \multicolumn{5}{|l|}{\textit{members/raghav/}}\\ \hline
+        12 & \texttt{dish\_ingredient\_bipartite.gexf} & Draft bipartite graph from unfiltered edges & 16.0 MB & P: \texttt{bipartite.py} \\ \hline
+        13--14 & \texttt{recipes\_ingredients.gexf}\newline \texttt{\{recipes,ingredients\}\_one\_mode.gexf} & Final bipartite graph and its two one-mode projections & 4.77 MB;\newline 1.74, 1.63 MB & P: \texttt{percolation.ipynb} \\ \hline
+        15--17 & \texttt{projection\_basic\_stats.csv}, \texttt{percolation\_ingredient.csv}, \texttt{cuisine\_\{robustness,\allowbreak ingredient\_failure\}\_results.csv} & Projection stats (17 rows), critical percolation thresholds, and per-cuisine robustness/failure tables (14 rows each) & 71 B--1.18 KB & P: \texttt{percolation.ipynb} \\ \hline
+        \multicolumn{5}{|l|}{\textit{members/sasanka mouli/}}\\ \hline
+        18 & \texttt{cooccurrence\_results.csv} & Co-occurrence stats for 8,911 ingredient pairs ($z$, $q$, empirical $p$) & 1.32 MB & P: \texttt{cooccurrence\_test.py}\newline D: \texttt{plot\_cooccurrence.py} \\ \hline
+    \end{tabular}
+    \caption{Summary of data and graph files in the repository. Paths are relative to the project root; P = parent script/tool that writes the file, D = daughter script/tool that reads it (omitted where terminal); sizes are decimal; \texttt{.gitkeep} files excluded.}
+    \label{tab:data_guide}
+\end{table*}
+
+
+\section{Network Topology}
+    The network is built as a sparse bipartite graph with $n = 3{,}933$ recipes and $568$ unique ingredients connected by $m = 46{,}669$ edges, giving a global bipartite density of $0.0209$ (Figure~\ref{fig:topo_overview}). On average, each recipe uses $12$ ingredients (rounded off to the nearest integer), while each ingredient appears in $82$ recipes. Projecting the graph into one-mode networks gives a denser ingredient network (density $0.1157$; $18{,}635$ edges) than recipe network (density $0.0441$; $340{,}974$ edges). Both projections have heavy-tailed degree distributions: ingredient degrees range from $3$ to $509$ (median $33$, mean $65.6$), and recipe degrees range from $0$ to $922$ (median $158$, mean $173.4$). Even after removing $49$ common hub ingredients, the network stays strongly connected---$100\%$ of ingredients ($568$ nodes, $1$ component) and $91.5\%$ of recipes ($3{,}597$ nodes) in one giant component (Figure~\ref{fig:topo_overview}).\\
+    Bipartite density by region shows many ingredients shared within regions than across the full graph ($0.0212$; Figure~\ref{fig:regional_density}). East India has the highest density ($0.0582$), followed by West India ($0.0421$), North India ($0.0411$), and South India ($0.0361$).
+    
+    \begin{figure*}[!t]
+        \centering
+        \begin{subfigure}[b]{0.52\textwidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{Figures/01_topology_overview.png}
+            \caption{Global topology, projections, and components.}
+            \label{fig:topo_overview}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.20\textheight,keepaspectratio]{Figures/02_regional_density.png}
+            \caption{Bipartite density across regions.}
+            \label{fig:regional_density}
+        \end{subfigure}
+        \caption{Major topological properties (a) and regional bipartite density comparison (b).}
+        \label{fig:topology_panel}
+    \end{figure*}
+
+\section{Model Comparisons}
+    To analyze the structural characteristics of the observed network, we compared it with five standard bipartite network models while keeping the two node sets and the total number of edges constant. The models, their construction strategies, and the specific structural properties they are designed to examine are summarized in Table~\ref{tab:models}. 
+    
+    \begin{table*}[!t]
+        \centering
+        \small
+        \renewcommand{\arraystretch}{1.3}
+        \begin{tabularx}{\textwidth}{|p{2.8cm}|X|X|}
+         \hline
+            \textbf{Model} & \textbf{Construction} & \textbf{Purpose} \\
+         \hline
+            Erdős--Rényi (ER)
+            & Selects 46,669 distinct possible recipe--ingredient pairs uniformly at random.
+            & A simple random wiring baseline. It removes the observed arrangement of links. \\
+            \hline
+            Watts--Strogatz-like (WS)
+            & Starts from a ring topology and rewires edges with $\beta = 0.1$.
+            & Introduces local structure and rewiring to test whether local organization can explain clustering. \\
+            \hline
+            Barabási--Albert-like (BA)
+            & Preferential attachment-style model with $\alpha = 1.0$ and no closure step.
+            & Tests degree heterogeneity arising from preferential attachment. \\
+            \hline
+            Holme--Kim-like (HK)
+            & Growth-style model with $p_{\text{close}} = 0.3$ and $\alpha = 1.0$.
+            & Adds a closure mechanism to the growth model. \\
+            \hline
+            Degree-Preserving (DP) & Double-edge swap & Keeps every node's degree fixed while changing which recipes connect to which ingredients. \\ \hline
+        \end{tabularx}
+        \caption{Standard bipartite network models and their construction strategies.}
+        \label{tab:models}
+    \end{table*}
+
+    Each of the five standard models: Erdős–Rényi (ER), Watts–Strogatz-like (WS), Barabási–Albert-like (BA), Holme–Kim-like (HK), and the Degree-Preserving rewiring (DP) were generated over 20 independent runs.
+    
+    \subsection{Degree distribution}
+        The degree distributions describe how connections are distributed among recipe and ingredient nodes. Although all models have the same number of nodes and edges, their degree distributions differ considerably.\\
+        
+        \textbf{Recipe nodes}: The original network shows a degree distribution concentrated around moderate degrees, with a tail extending towards higher degrees. The WS and DP models reproduce parts of this distribution more closely than ER, BA and HK. The BA and HK models show broader tails, indicating greater degree heterogeneity while ER produces a more random distribution.\\
+        
+        \textbf{Ingredient nodes}: The original network has a highly heterogeneous degree distribution. A small number of ingredients connect to many recipes, while numerous ingredients appear in relatively few recipes. The generated models do not reproduce this distribution equally well.
+        
+        \begin{figure*}[!t]
+            \centering
+            \begin{subfigure}[t]{0.85\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/degree_distribution.png}
+                \caption{Degree distributions of recipe nodes (left) and ingredient nodes (right)}
+                \label{fig:degree_dist}
+            \end{subfigure}
+        
+            \bigskip
+        
+            \begin{subfigure}[t]{0.85\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/degree_cdf.png}
+                \caption{Cumulative degree distributions of recipe nodes (left) and ingredient nodes (right)}
+                \label{fig:degree_cdf}
+            \end{subfigure}
+            \caption{Degree distributions (a) and cumulative degree distributions (b) of the original network and the generated models.}
+            \label{fig:degree}
+        \end{figure*}
+        
+        The cumulative degree distributions (Figure~\ref{fig:degree}b) support these observations. In particular, the original ingredient distribution has a longer tail than most generated models, indicating that 'highly connected ingredients' is an important feature of the observed network.
+    
+    \subsection{Bipartite clustering coefficient}
+        Clustering measures the extent to which nodes on the same side of a bipartite network share common neighbours on the opposite side.
+        
+        \begin{table}
+            \centering
+            \small
+            \renewcommand{\arraystretch}{1.3}
+            \begin{tabularx}{\linewidth}{|l|X|X|}
+             \hline
+                \textbf{Network} & \textbf{Recipe Clustering} & \textbf{Ingredient Clustering} \\
+             \hline
+                Original & 0.1686 & 0.0205 \\ \hline
+                ER & 0.0495 & 0.0129 \\ \hline
+                WS & 0.1747 & 0.0440 \\ \hline
+                BA & 0.0511 & 0.0195 \\ \hline
+                HK & 0.0460 & 0.0172 \\ \hline
+                DP & 0.1572 & 0.0126 \\ \hline
+            \end{tabularx}
+            \caption{Bipartite clustering coefficients of the original network and the generated models.}
+            \label{tab:clustering}
+        \end{table}
+        
+        The original network has a recipe-side clustering coefficient of 0.1686 and an ingredient-side coefficient of 0.0205. The WS model produces the highest clustering on both sides. The DP model produces a high recipe-side clustering (0.1572) close to the original, but its ingredient-side clustering (0.0126) is lower than that of the original. \\
+        The overall bipartite clustering coefficient follows a similar pattern: WS has the highest value (0.1582), followed by the original network (0.1499) and DP (0.1390).
+        
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{Figures/clustering.png}
+            \caption{Comparison of average bipartite clustering coefficients for recipe and ingredient nodes}
+            \label{fig:clustering}
+        \end{figure}
+    
+    \subsection{Connected components and path length }
+        The original network forms a single connected component containing all 4,501 nodes.
+        
+        \begin{itemize}
+            \item \textbf{ER:} Almost all 4,501 nodes belong to the giant component, with an average of 1.05 connected components.
+            \item \textbf{WS and DP:} One connected component.
+            \item \textbf{BA:} 292.25 connected components on average, with 93.53\% of the nodes in the giant component.
+            \item \textbf{HK:} 562.75 connected components on average, with 87.51\% of the nodes in the giant component.
+        \end{itemize}
+        
+        The average shortest path length in the original network is 2.4506. DP produces a slightly shorter average path length of 2.2914, whereas ER, WS, BA and HK produce values of 3.4087, 3.6701, 3.2704 and 3.1156, respectively.
+    
+    \subsection{Four-cycle analysis}
+        Four-cycles, also called butterflies, are important structural patterns in bipartite networks. A four-cycle occurs when two recipes share two common ingredients, forming a closed cycle of four nodes.\\
+        The original network contains 46,752,421 four-cycles, substantially more than any of the generated models.
+        
+        \begin{table}[t]
+            \centering
+            \small
+            \renewcommand{\arraystretch}{1.3}
+        
+            \begin{tabularx}{\linewidth}{|X|r|}
+                \hline
+                \textbf{Model} & \textbf{Mean four-cycle count} \\\hline
+                Original & 46,752,421 \\ \hline
+                ER & 237,145 \\\hline
+                WS & 4,325,005 \\\hline
+                BA & 2,761,491 \\\hline
+                HK & 2,449,805 \\\hline
+                DP & 37,730,121 \\\hline
+            \end{tabularx}
+            \caption{Comparison of four-cycle counts in the original recipe--ingredient network}
+            \label{tab:four_cycle_count}
+        \end{table}
+        
+        The ER model produces the fewest four-cycles, and DP produces approximately 37.73 million four-cycles, much closer to the original than the other models. This demonstrates that preserving the individual node degrees retains a substantial amount of the network's four-cycle structure.\\
+        The four-cycle density follows the same pattern: the original network has a density of $3.755 \times 10^{-5}$, while DP has $3.030 \times 10^{-5}$. ER has the lowest density, at $1.905 \times 10^{-7}$.\\
+        The large difference between ER and DP suggests that the degree sequence is an important contributor to the four-cycle structure, although preserving node degrees alone does not reproduce all aspects of the observed network organization.
+        
+        \begin{figure*}[!t]
+            \centering
+        
+            % First row - 3 images
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/Original_butterfly.png}
+                \caption{Butterfly structures in Original network}
+                \label{fig:image1}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/ER_butterfly.png}
+                \caption{Butterfly structures in ER network}
+                \label{fig:image2}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/WS_butterfly.png}
+                \caption{Butterfly structures in WS network}
+                \label{fig:image3}
+            \end{subfigure}
+        
+            \bigskip
+        
+            % Second row - 2 images, centred
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/BA_butterfly.png}
+                \caption{Butterfly structures in BA network}
+                \label{fig:image4}
+            \end{subfigure}
+            \hspace{0.04\textwidth}
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/HK_butterfly.png}
+                \caption{Butterfly structures in HK network}
+                \label{fig:image5}
+            \end{subfigure}
+        
+            \caption{Butterfly structures in original and generated models}
+            \label{fig:five_images}
+        \end{figure*}
+
+    \subsection{Overall comparison}
+        The comparative results show that no single alternative model reproduces every structural property of the original network.
+        
+        \begin{itemize}
+            \item \textbf{ER:} Provides a random baseline but substantially underestimates clustering and four-cycle structure.
+        
+            \item \textbf{WS:} Reproduces high clustering but does not reproduce all observed degree and shared-neighbour patterns.
+        
+            \item \textbf{BA:} Introduces degree heterogeneity through preferential attachment, but its generated networks are fragmented and have lower clustering and four-cycle counts than the original.
+        
+            \item \textbf{HK:} Adds a closure mechanism, but it also produces fragmented networks and does not recover the original network's four-cycle structure.
+        
+            \item \textbf{DP:} Reproduces the original four-cycle count and mean shared-neighbour counts more closely than the other generated models. It also maintains a single connected component and relatively short paths.
+        \end{itemize}
+
+\section{Correlations and Robustness}
+
+    \subsection{Degree Correlations}
+    Correlations measure the tendency of like nodes to share an edge. Two common measures used for the identifying degree correlations are the pearson coefficient ($r$) and average nearest neighbour degree (ANND). A positive $r$-value suggests assortativity \textit{(like pairs with like)}, negative suggests dis-assortativity and zero suggests neutrality. A similar criteria appears for the slope of 'ANND vs degree' plots. Both measures were computed as detailed in \texttt{correlations.ipynb} using a python script.
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{knnplots.png}
+        \caption{Correlation analysis on weighted ingredient and recipe projections}
+        \label{fig:correlation}
+    \end{figure}
+        
+    From Figure ~\ref{fig:correlation}, the plot for recipes projection behaves erradic and disagrees with the $r$ value, probably due to incorrect assumptions in the formulations of the measures. Ingredient projection appears to behave more predictably if we attribute the falling curve to finite-size effects which are commonly observed in real networks. In layman terms, we were unable to find any evidence on ingredient pairings or mismatches from degree correlations. It is possible that certain pairings were cancelled out by other mismatches when taking the average, but our study cannot prove them.
+
+    \subsection{Robustness}
+    Like most other analysis in our project, robustness was analyzed for one mode projections of the recipes and another for the ingredients. The most common ingredients were removed as they always made the graph a giant component. \\
+    We first analyzed the network's robustness on random failure - by removing random nodes, and on targeted attacks - by removing nodes in decreasing order of their degrees (Figure ~\ref{fig:robustness}).
+    
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{\linewidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.27\textheight,keepaspectratio]{Figures/ingredient_robust.png}
+            \caption{Ingredient robustness}
+            \label{fig:robust_ing}
+        \end{subfigure}
+    
+        \medskip
+    
+        \begin{subfigure}[t]{\linewidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.27\textheight,keepaspectratio]{Figures/Recipe_robust.png}
+            \caption{Recipe robustness}
+            \label{fig:robust_rec}
+        \end{subfigure}
+        \caption{Robustness of the ingredient (a) and recipe (b) projections under random failures and degree-based attack.}
+        \label{fig:robustness}
+    \end{figure}
+
+    Linear plot on random failure of the ingredients means that they are densely connected. The rapid decay of the attack plot indicates the presence of hubs in the ingredient projection.\\
+    Recipe plots confirm the presence of cliques, inferred from the plateaus in the plot. The cliques are expected due to the regional inter-dependencies of coupled ingredients. On further investigating a particular 5-node clique, which comes out to be a constant in the attack plot, we realized that a clique could also be formed due to one unique ingredient; like in the case of a specific spice where 4 of the dishes were Maharashtrian while one alone was from Andhra.
+    
+    We also analyzed the robustness of cuisines to factors like, say, a price hike for a local ingredient (Figure~\ref{fig:percolation}). Removal of even one ingredient led to the disposal of the node, so the results shown are normalized, which makes them look much larger than they should be.
+    
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{\linewidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.27\textheight,keepaspectratio]{Figures/cuisine_robustness.png}
+            \caption{Recipe removal}
+            \label{fig:perc_recipe}
+        \end{subfigure}
+    
+        \medskip
+    
+        \begin{subfigure}[t]{\linewidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.27\textheight,keepaspectratio]{Figures/cuisine_robustness_ing.png}
+            \caption{Ingredient removal}
+            \label{fig:perc_ing}
+        \end{subfigure}
+        \caption{Percolation of regional cuisines under recipe removal (a) and ingredient removal (b).}
+        \label{fig:percolation}
+    \end{figure}
+
+\section{Ingredient Co-occurrence and Food Pairing}
+\label{sec:cooccurrence}
+    Adapting the food-pairing hypothesis~\cite{ahn2011} from flavour chemistry to recipe usage, we test whether ingredient pairs co-occur beyond popularity expectations and whether those associations persist across cuisines.
+
+    \subsection{Method}
+        From \texttt{nodes\_9.0} and \texttt{edges\_6.0}, we evaluate $8{,}911$ pairs among $134$ ingredients appearing in $\ge 30$ recipes (excluding salt and water). Degree-preserving Curveball trades~\cite{strona2014} generate $500$ null matrices under a \emph{pooled} model (trades across all recipes) and a \emph{stratified} model (trades restricted within $21$ cuisine strata, pooling $19$ cuisines with $<30$ recipes into \emph{other} and treating \emph{Indian} as unknown).
+
+        Standardized scores $z = (\text{observed} - \text{null mean})/\text{null s.d.}$ (normal two-sided $p$ for null mean $\ge 5$, Poisson tail otherwise) are Benjamini--Hochberg corrected~\cite{benjamini1995} at $q<0.05$ (\texttt{cooccurrence\_test.py}, \texttt{plot\_cooccurrence.py}; output in \texttt{cooccurrence\_results.csv}). Comparing significance across both nulls classifies pairs as \emph{universal} (both nulls, same sign), \emph{regional} (pooled only), \emph{masked} (stratified only), \emph{sign flip} (opposite signs), or \emph{ns}.
+
+    \subsection{Results}
+        \begin{table}[t]
+            \centering
+            \footnotesize
+            \renewcommand{\arraystretch}{1.15}
+            \begin{tabular}{|l|r|}
+                \hline
+                \textbf{Class} & \textbf{Pairs} \\ \hline
+                Universal (both nulls) & 1,664 \\ \hline
+                Regional (pooled only) & 563 \\ \hline
+                Masked (stratified only) & 145 \\ \hline
+                Sign flip & 1 \\ \hline
+                Not significant & 6,538 \\ \hline
+            \end{tabular}
+            \caption{Classification of the $8{,}911$ tested ingredient pairs.}
+            \label{tab:cooc_classes}
+        \end{table}
+
+        Most significant pairings are \emph{universal} ($1{,}664$ pairs; Table~\ref{tab:cooc_classes}), persisting even when cuisine is controlled (Figure~\ref{fig:cooc_panel}a). In contrast, $563$ \emph{regional} pairings are driven by shared cuisine geography, while $145$ \emph{masked} pairings only emerge within individual cuisines once cross-cuisine variance is removed. A single pair-mustard oil and sugar-flips sign, appearing favoured overall yet avoided within cuisines.
+
+        Extreme positive pairs capture canonical flavour and prep pairings (Figure~\ref{fig:cooc_panel}b), led by green with sweet chutney ($27$ vs.\ $0.4$ expected, $z=44.0$) and curry leaves with mustard seeds ($827$ vs.\ $344$, $z=37.9$). Extreme avoidances separate competing fats or incompatible staples, such as ghee with sunflower oil ($189$ vs.\ $410$, $z=-16.3$) and milk with red chilli ($39$ vs.\ $175$, $z=-16.3$). Thresholding at $z\ge 12$ under both nulls isolates $71$ cuisine-invariant links across $45$ ingredients, forming eight modular culinary clusters (Figure~\ref{fig:cooc_panel}c): curry aromatics (onion, tomato, ginger, garlic), sweets (milk, sugar, nuts), biryani whole spices, vegetables, chaat accompaniments (chutneys, sev), southern tempering (curry leaves, mustard seeds, asafoetida), green coriander--oil, and bajra--millet flour. These clusters confirm that co-occurrence structure reflects functional culinary preference rather than raw ingredient frequency.
+
+        \begin{figure*}[!t]
+            \centering
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/ic_pooled_vs_stratified.pdf}
+                \caption{Pooled vs.\ stratified $z$; points near the diagonal are cuisine-invariant.}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/ic_top_pairs.pdf}
+                \caption{Extreme positive and negative pooled pairings (stratified $z$ as diamonds).}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[t]{0.32\textwidth}
+                \centering
+                \includegraphics[width=\linewidth]{Figures/ic_strongest_pairings_modularity.pdf}
+                \caption{Strongest shared pairings ($z\ge 12$ in both nulls); node size = degree, color = community.}
+            \end{subfigure}
+            \caption{Ingredient co-occurrence results: cuisine dependence (a), extreme pairs (b), and cuisine-independent clusters (c).}
+            \label{fig:cooc_panel}
+        \end{figure*}
+
+
+\section{Ingredient diversity}
+    To understand why regional sub-networks are much denser than the whole graph, we tested how two key ingredient groups---whole and ground spices, and culinary leaves---are distributed across Indian cuisines. Refer figure ~\ref{fig:regional_signatures} for the numerical backing, which have been omitted in text to save space.
+    
+    \textbf{Spices across regions (Figure~\ref{fig:spices}):} Red chilli and turmeric act as a shared base across almost all cuisines. North Indian and Mughlai cuisines rely mostly on warm spices such as cumin, cardamom and cinnamon. In contrast, South Indian and coastal cuisines use mustard seeds and tamarind more.
+    
+    \textbf{Culinary leaves (Figure~\ref{fig:leaves}):} Leafy ingredients create the sharpest North--South boundary in the network. Curry leaves dominate South Indian and coastal recipes but are rare in Northern and Eastern cuisines, while bay leaves are found mostly in Northern, Eastern, and Hyderabadi cooking. Secondary herbs such as mint and methi leaves further separate local clusters.
+    
+    \begin{figure*}[!t]
+        \centering
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.21\textheight,keepaspectratio]{Figures/04_whole_ground_spices.png}
+            \caption{Whole and ground spices.}
+            \label{fig:spices}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.49\textwidth}
+            \centering
+            \includegraphics[width=\linewidth,height=0.21\textheight,keepaspectratio]{Figures/07_leafy_greens.jpg}
+            \caption{Leafy greens and culinary leaves.}
+            \label{fig:leaves}
+        \end{subfigure}
+        \caption{Recipe prevalence (\%) of whole and ground spices (a) and culinary leaves (b) across Indian cuisines.}
+        \label{fig:regional_signatures}
+    \end{figure*}
+
+
+
+\section{Limitations and Possibilities}
+    \begin{itemize}
+        \item Classification of ingredients: Most dishes can be made without supplementary ingredients, whereas the absence of key ingredients will 'break' the dish. Such a hierarchy would transform the topology and yield interesting robustness analysis. We dropped the idea since such a classification is data starved and would be biased and heavily time consuming.
+        \item Origins of some dishes are controversial or not well-known, yet we followed the original dataset for their classification. Ambiguous dishes are classified under a broader region like \textit{'Indian'} or \textit{'South Indian'}, which are sources of information leakage.
+        \item Regional representations vary within the dataset. North-eastern cuisine is heavily under-represented in our study whereas Maharashtrian and Karnatak dishes are well represented.
+        \item The approximate preparation times available from our dataset could have been better utilized, perhaps to study the varying efforts and time required for preparing different Indian cuisines.
+        \item We initially thought of drawing a correlation between famines and the robustness to failure, but the data we had did not correlate as much and was mostly random. 
+        
+    \end{itemize}
+
+
+\nocite{*}
+\bibliographystyle{plain} % Options: plain, unsrt, alpha, abbrv
+\bibliography{references}  % This looks for the file named references.bib
+
+
+\vspace{0.35cm}
+{\footnotesize
+\noindent\textit{We confirm that the data in this report was collected by us as described, that we have not fabricated or altered any result, and that the contributions recorded below are accurate. We have declared our use of AI tools, and each of us can explain any part of this submission on request.}
+\par}
+
+\clearpage
+    \begin{table*}[!t]
+        \centering
+        \small
+        \renewcommand{\arraystretch}{1.1}
+        \setlength{\tabcolsep}{4pt}
+        \renewcommand{\tabularxcolumn}[1]{m{#1}}
+        \begin{tabularx}{\textwidth}{
+            |>{\hsize=0.6\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+            |>{\hsize=0.6\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+            |>{\hsize=1.6\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+            |>{\hsize=1.5\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+            |>{\hsize=0.7\hsize\linewidth=\hsize\raggedright\arraybackslash}X|
+        }
+            \hline
+            \rowcolor{gray!15}
+            NAME & ROLL NO. & WHAT I DID & AI TOOLS AND WHY & SIGNATURE \\
+            
+            \hline
+            Kiruthees G & ME23B246 & I computed degree distribution with a log-binned power-law fit and created recipe complexity charts across cuisines. I also performed a Lift calculation to extract regional lift markers. Also, tried doing Zipf law and community analysis. & Gemini - used to assist with code and plot generation & Kiruthees G 27/11/2026 \\
+            
+            \hline
+            Mohammed Mizal K & BS23B032 & Manually cleaned the dataset, ideated the final figure with geo-layout in gephi, analyzed network correlation using r-value and knn plots, organized the final slides and report. & GPT-6 Luna was used for finding syntax or logical errors in my codes, to obtain coordinates as a csv file and assistance with latex syntax for the report & Signed, Mizal 26/11/2026 \\
+            
+            \hline
+            Nivetha P & MD26S002 & I compared the original bipartite recipe–ingredient network with four canonical network models: Erdős–Rényi (ER), Watts–Strogatz (WS), Barabási–Albert (BA), and Holme–Kim (HK). I also generated a degree-preserving null model and analysed the structural properties of all networks by examining their degree distributions, cumulative degree distributions, clustering coefficients, number of connected components, giant component size, and butterfly motif counts. & Claude Sonnet was used for code debugging, troubleshooting, and resolving implementation-related errors. ChatGPT (GPT-6) was used for report refinement, technical paraphrasing and generating and formatting LaTeX code. & Nivetha, 27/11/2026 \\
+            
+            \hline
+            Raghav Y & ME23B059 & Did the prelimnary code conversion, bipartite generation,worked on robustness code, Modularity based grouping and representation of the network& Used AI for debugging and generation of code with minor changes from my original code the model used was Claude Haiku and Ollama open models& Raghav Y 27/112026 \\
+            
+            \hline
+            Rohieth Raj S & CH25D404 & Assisted in cleaning ingredient entries and performed core topological analysis—computing global density, average degrees, one-mode projections, and giant component/isolates after hub removal. Analyzed regional prevalence heatmaps across eight ingredient categories (spices, culinary leaves, staples, oils, masalas, dals, rice, and millets). & Gemini--- used to assist with logic, pipeline, code, and plot generation & S R R 27/11/2026 \\
+
+            \hline
+            Sasanka Mouli G & DA25B013 & Analysed ingredient co-occurrence patterns using z-scores, plotted under-represented and over-represented pairs. Helped with the layout of one of the final candidate representations of the bipartite network. & Claude - used to assist with code generation, latex formatting and understanding of ideas & Sasanka Mouli 27/11/2026 \\
+            \hline
+        \end{tabularx}
+        \caption{Team Signatures}
+    \end{table*}
+
+
+\end{document}
+

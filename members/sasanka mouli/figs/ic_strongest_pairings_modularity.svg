@@ -2262,7 +2262,7 @@ z
      <use xlink:href="#DejaVuSans-56" transform="translate(3841.734375 0)"/>
      <use xlink:href="#DejaVuSans-c" transform="translate(3893.828125 0)"/>
     </g>
-    <!-- node size = #partners, colour = greedy-modularity community (8 groups) -->
+    <!-- node size = #partners, color = greedy-modularity community (8 groups) -->
     <g transform="translate(118.930313 31.922578) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-20" d="M 678 2906 

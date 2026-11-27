@@ -3443,7 +3443,7 @@
           <attvalue for="3" value="3" />
         </attvalues>
       </node>
-      <node id="food colour" label="food colour">
+      <node id="food color" label="food color">
         <viz:color r="204" g="204" b="204" a="1.0" />
         <viz:size value="10.0" />
         <viz:shape value="triangle" />
@@ -6557,7 +6557,7 @@
       <edge source="saffron" target="gobi" id="293" weight="2" />
       <edge source="saffron" target="rajma" id="294" weight="2" />
       <edge source="saffron" target="green beans" id="295" weight="4" />
-      <edge source="saffron" target="food colour" id="296" weight="2" />
+      <edge source="saffron" target="food color" id="296" weight="2" />
       <edge source="saffron" target="poha" id="297" weight="2" />
       <edge source="saffron" target="mutton" id="298" weight="8" />
       <edge source="saffron" target="bay leaves" id="299" weight="25" />
@@ -10000,7 +10000,7 @@
       <edge source="food color" target="rose water" id="3736" weight="1" />
       <edge source="food color" target="salt" id="3737" weight="1" />
       <edge source="food color" target="honey" id="3738" weight="1" />
-      <edge source="food color" target="food colour" id="3739" weight="1" />
+      <edge source="food color" target="food color" id="3739" weight="1" />
       <edge source="food color" target="soy sauce" id="3740" weight="1" />
       <edge source="food color" target="orange" id="3741" weight="1" />
       <edge source="food color" target="dry fruits" id="3742" weight="1" />
@@ -12357,7 +12357,7 @@
       <edge source="pistachios" target="sabudana" id="6093" weight="1" />
       <edge source="pistachios" target="mustard oil" id="6094" weight="2" />
       <edge source="pistachios" target="gobi" id="6095" weight="2" />
-      <edge source="pistachios" target="food colour" id="6096" weight="2" />
+      <edge source="pistachios" target="food color" id="6096" weight="2" />
       <edge source="pistachios" target="bay leaves" id="6097" weight="6" />
       <edge source="pistachios" target="figs" id="6098" weight="6" />
       <edge source="pistachios" target="phool makhana" id="6099" weight="2" />
@@ -15806,7 +15806,7 @@
       <edge source="flour" target="mustard oil" id="9542" weight="15" />
       <edge source="flour" target="gobi" id="9543" weight="11" />
       <edge source="flour" target="rajma" id="9544" weight="6" />
-      <edge source="flour" target="food colour" id="9545" weight="1" />
+      <edge source="flour" target="food color" id="9545" weight="1" />
       <edge source="flour" target="bay leaves" id="9546" weight="39" />
       <edge source="flour" target="lahsun ki chutney" id="9547" weight="2" />
       <edge source="flour" target="brown sugar" id="9548" weight="3" />
@@ -16874,7 +16874,7 @@
       <edge source="milk" target="gobi" id="10610" weight="1" />
       <edge source="milk" target="rajma" id="10611" weight="5" />
       <edge source="milk" target="green tea" id="10612" weight="1" />
-      <edge source="milk" target="food colour" id="10613" weight="2" />
+      <edge source="milk" target="food color" id="10613" weight="2" />
       <edge source="milk" target="oil" id="10614" weight="2" />
       <edge source="milk" target="arrowroot flour" id="10615" weight="1" />
       <edge source="milk" target="bay leaves" id="10616" weight="28" />
@@ -17364,7 +17364,7 @@
       <edge source="cashew nuts" target="apricot" id="11100" weight="1" />
       <edge source="cashew nuts" target="gobi" id="11101" weight="19" />
       <edge source="cashew nuts" target="rajma" id="11102" weight="2" />
-      <edge source="cashew nuts" target="food colour" id="11103" weight="1" />
+      <edge source="cashew nuts" target="food color" id="11103" weight="1" />
       <edge source="cashew nuts" target="oil" id="11104" weight="3" />
       <edge source="cashew nuts" target="arrowroot flour" id="11105" weight="2" />
       <edge source="cashew nuts" target="khurchan" id="11106" weight="1" />
@@ -18393,7 +18393,7 @@
       <edge source="baking soda" target="pepper" id="12129" weight="3" />
       <edge source="baking soda" target="gobi" id="12130" weight="1" />
       <edge source="baking soda" target="green tea" id="12131" weight="1" />
-      <edge source="baking soda" target="food colour" id="12132" weight="1" />
+      <edge source="baking soda" target="food color" id="12132" weight="1" />
       <edge source="baking soda" target="oil" id="12133" weight="2" />
       <edge source="baking soda" target="arrowroot flour" id="12134" weight="1" />
       <edge source="baking soda" target="bay leaves" id="12135" weight="1" />
@@ -20170,7 +20170,7 @@
       <edge source="badam" target="walnuts" id="13906" weight="4" />
       <edge source="badam" target="mustard oil" id="13907" weight="2" />
       <edge source="badam" target="gobi" id="13908" weight="5" />
-      <edge source="badam" target="food colour" id="13909" weight="1" />
+      <edge source="badam" target="food color" id="13909" weight="1" />
       <edge source="badam" target="bay leaves" id="13910" weight="19" />
       <edge source="badam" target="figs" id="13911" weight="8" />
       <edge source="badam" target="rock salt" id="13912" weight="1" />
@@ -21219,19 +21219,19 @@
       <edge source="green tea" target="cardamom" id="14955" weight="2" />
       <edge source="green tea" target="condensed milk" id="14956" weight="1" />
       <edge source="green tea" target="water" id="14957" weight="1" />
-      <edge source="food colour" target="ghee" id="14958" weight="2" />
-      <edge source="food colour" target="fruit jam" id="14959" weight="1" />
-      <edge source="food colour" target="bottle gourd" id="14960" weight="1" />
-      <edge source="food colour" target="sunflower oil" id="14961" weight="1" />
-      <edge source="food colour" target="white vinegar" id="14962" weight="1" />
-      <edge source="food colour" target="butter" id="14963" weight="1" />
-      <edge source="food colour" target="thandai masala" id="14964" weight="1" />
-      <edge source="food colour" target="peanut" id="14965" weight="1" />
-      <edge source="food colour" target="cardamom" id="14966" weight="3" />
-      <edge source="food colour" target="khoya" id="14967" weight="1" />
-      <edge source="food colour" target="sugar" id="14968" weight="4" />
-      <edge source="food colour" target="condensed milk" id="14969" weight="1" />
-      <edge source="food colour" target="water" id="14970" weight="1" />
+      <edge source="food color" target="ghee" id="14958" weight="2" />
+      <edge source="food color" target="fruit jam" id="14959" weight="1" />
+      <edge source="food color" target="bottle gourd" id="14960" weight="1" />
+      <edge source="food color" target="sunflower oil" id="14961" weight="1" />
+      <edge source="food color" target="white vinegar" id="14962" weight="1" />
+      <edge source="food color" target="butter" id="14963" weight="1" />
+      <edge source="food color" target="thandai masala" id="14964" weight="1" />
+      <edge source="food color" target="peanut" id="14965" weight="1" />
+      <edge source="food color" target="cardamom" id="14966" weight="3" />
+      <edge source="food color" target="khoya" id="14967" weight="1" />
+      <edge source="food color" target="sugar" id="14968" weight="4" />
+      <edge source="food color" target="condensed milk" id="14969" weight="1" />
+      <edge source="food color" target="water" id="14970" weight="1" />
       <edge source="bay leaves" target="walnuts" id="14971" weight="1" />
       <edge source="bay leaves" target="oil" id="14972" weight="24" />
       <edge source="bay leaves" target="couscous" id="14973" weight="1" />

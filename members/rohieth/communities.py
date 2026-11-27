@@ -118,7 +118,7 @@ for j, nm in enumerate(NAMES):
 ax.legend(loc="lower left", frameon=False, fontsize=15, handletextpad=0.6, labelspacing=0.7)
 
 # ---- right: heatmap
-vmax = 0.8   # colour scale clipped at +/-0.8 (values beyond saturate)
+vmax = 0.8   # color scale clipped at +/-0.8 (values beyond saturate)
 im = axh.imshow(H.values, cmap="RdBu_r", norm=Normalize(-vmax, vmax), aspect="auto")
 axh.set_yticks(range(len(H))); axh.set_yticklabels(H.index, fontsize=13)
 axh.set_xticks(range(N_COMM))

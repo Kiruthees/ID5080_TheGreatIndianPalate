@@ -1,5 +1,5 @@
 # This code is authored by Claude, Raghav and Sasanka Mouli
-# Used to make node colours as average of the recipes it is connected to and tries to implement polygonal nodes.
+# Used to make node colors as average of the recipes it is connected to and tries to implement polygonal nodes.
 import pandas as pd
 import networkx as nx
 from pathlib import Path
@@ -80,7 +80,7 @@ def rgb_to_hex(rgb):
     return "#{:02X}{:02X}{:02X}".format(*rgb)
 
 
-# Assign original colours to all nodes
+# Assign original colors to all nodes
 for n in B.nodes:
     rgb = hex_to_rgb(B.nodes[n]["Color"])
 
@@ -93,7 +93,7 @@ for n in B.nodes:
     }
 
 
-# Average Recipe colours for each Ingredient
+# Average Recipe colors for each Ingredient
 for ingredient in ingredients:
 
     connected_recipes = [
@@ -104,13 +104,13 @@ for ingredient in ingredients:
     if not connected_recipes:
         continue
 
-    colours = [
+    colors = [
         hex_to_rgb(B.nodes[n]["Color"])
         for n in connected_recipes
     ]
 
     avg_rgb = tuple(
-        round(sum(c[i] for c in colours) / len(colours))
+        round(sum(c[i] for c in colors) / len(colors))
         for i in range(3)
     )
 
@@ -119,7 +119,7 @@ for ingredient in ingredients:
     # Update hex attribute
     B.nodes[ingredient]["Color"] = avg_hex
 
-    # Update Gephi visualization colour
+    # Update Gephi visualization color
     B.nodes[ingredient]["viz"]["color"] = {
         "r": avg_rgb[0],
         "g": avg_rgb[1],
@@ -131,4 +131,4 @@ for ingredient in ingredients:
 # Add your existing shapes
 B = add_viz_shapes(B)
 
-nx.write_gexf(B, OUT_DIR / "coloured_recipes_ingredients.gexf")
+nx.write_gexf(B, OUT_DIR / "colored_recipes_ingredients.gexf")
