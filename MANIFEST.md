@@ -55,7 +55,7 @@ All scripts read `nodes_9.0.csv` and/or `edges_6.0.csv`.
 | `cuisine_specificity.py` | Cuisine specificity (lift = P(i given cuisine) / P(i)) and regional signatures, generic "indian" label excluded | Kiruthees |
 | `masala_cuisine_lift_clean.png`, `masala_regional_signatures.png` | Lift heatmap and 2x2 regional signature panels | `cuisine_specificity.py` |
 | `degree_dist.py` | Ingredient degree distribution and power-law fits (log-binned regression and Clauset MLE), recipe complexity; imports the local `powerlaw.py`; `SPLIT_FIGS = True` writes two files | Kiruthees |
-| `powerlaw.py` | Our own power-law fitting module, imported by `degree_dist.py`. Must stay in this folder, because Python finds it next to the script | Kiruthees  |
+| `power_law.py` | Our own power-law fitting module, imported by `degree_dist.py`. Must stay in this folder, because Python finds it next to the script | Kiruthees  |
 | `masala_degrees_powerlaw.png`, `masala_recipe_complexity.png` | Degree and complexity figures | `degree_dist.py` |
 | `power_law.py` | Power-law recomputation: raw PDF OLS, CCDF OLS, Clauset MLE | Kiruthees |
 | `masala_power_law_validation.png` | Power-law validation figure | `power_law.py` |

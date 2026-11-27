@@ -70,7 +70,7 @@ All of these read `nodes_9.0.csv` and `edges_6.0.csv` from `common/data_processe
 | Louvain communities and their cuisine prevalence | `members/rohieth/communities.py` | `communities_and_cuisines.png` | 12 s |
 | Ingredient communities (Jaccard backbone, Louvain) | `members/kiruthees/community_detec.py` | `masala_ingredient_communities.png` | 1 s |
 | Cuisine specificity (lift) and regional signatures | `members/kiruthees/cuisine_specificity.py` | `masala_cuisine_lift_clean.png`, `masala_regional_signatures.png` | 3 s |
-| Degree distributions and power-law fits | `members/kiruthees/degree_dist.py` (imports the local `members/kiruthees/powerlaw.py`; `SPLIT_FIGS = True`) | `masala_degrees_powerlaw.png`, `masala_recipe_complexity.png` | 2 s |
+| Degree distributions and power-law fits | `members/kiruthees/degree_dist.py` (imports the local `members/kiruthees/power_law.py`; `SPLIT_FIGS = True`) | `masala_degrees_powerlaw.png`, `masala_recipe_complexity.png` | 2 s |
 | Power-law validation (PDF, CCDF, Clauset MLE) | `members/kiruthees/power_law.py` | `masala_power_law_validation.png` | 1 s |
 | Zipf-Mandelbrot fit of ingredient usage | `members/kiruthees/zipf.py` | `masala_zipf_mandelbrot.png` | 2 s |
 | Power couples, effort meter, recipe complexity tiers | `members/kiruthees/last_metrics.py` | `masala_intuitive_metrics.png` | 1 s |
