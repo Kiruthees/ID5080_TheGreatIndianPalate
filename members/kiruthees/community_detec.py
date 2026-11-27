@@ -1,12 +1,23 @@
-import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix
+from pathlib import Path
 
-dn = pd.read_csv("nodes.csv")
-de = pd.read_csv("edges.csv")
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
+
+dn = pd.read_csv(DATA_DIR / "nodes_9.0.csv")
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 # 1. build bi-adjacency & project to ingredient space
 ru, ri = np.unique(de["Source"], return_inverse=True)
@@ -50,7 +61,7 @@ print(f"modularity Q: {q:.4f}")
 print(f"detected major functional communities: {len(comms)}\n")
 
 # identify top central hubs per community
-cmap_pts = cm.get_cmap("tab10", len(comms))
+cmap_pts = plt.colormaps["tab10"].resampled(len(comms))
 comm_info = []
 for i, c in enumerate(comms):
     sub = g_sub.subgraph(c)
@@ -126,5 +137,5 @@ for bar, info in zip(bars, comm_info):
     )
 
 plt.tight_layout()
-plt.savefig("masala_ingredient_communities.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_ingredient_communities.png", dpi=300)
 plt.show()

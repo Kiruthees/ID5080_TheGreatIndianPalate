@@ -6,7 +6,7 @@
   <graph defaultedgetype="undirected" mode="static" name="">
     <attributes mode="static" class="node">
       <attribute id="0" title="bipartite" type="long" />
-      <attribute id="1" title="cuisine" type="double" />
+      <attribute id="1" title="cuisine" type="string" />
       <attribute id="2" title="type" type="string" />
       <attribute id="3" title="Polygon" type="long" />
     </attributes>
@@ -17,7 +17,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -28,7 +28,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -39,7 +39,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -50,7 +50,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -61,7 +61,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -72,7 +72,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -83,7 +83,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -94,7 +94,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -105,7 +105,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -116,7 +116,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -127,7 +127,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -138,7 +138,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -149,7 +149,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -160,7 +160,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -171,7 +171,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -182,7 +182,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -193,7 +193,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -204,7 +204,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -215,7 +215,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -226,7 +226,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -237,7 +237,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -248,7 +248,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -259,7 +259,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -270,7 +270,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -281,7 +281,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -292,7 +292,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -303,7 +303,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -314,7 +314,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -325,7 +325,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -336,7 +336,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -347,7 +347,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -358,7 +358,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -369,7 +369,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -380,7 +380,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -391,7 +391,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -402,7 +402,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -413,7 +413,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -424,7 +424,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -435,7 +435,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -446,7 +446,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -457,7 +457,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -468,7 +468,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -479,7 +479,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -490,7 +490,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -501,7 +501,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -512,7 +512,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -523,7 +523,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -534,7 +534,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -545,7 +545,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -556,7 +556,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -567,7 +567,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -578,7 +578,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -589,7 +589,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -600,7 +600,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -611,7 +611,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -622,7 +622,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -633,7 +633,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -644,7 +644,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -655,7 +655,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -666,7 +666,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -677,7 +677,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -688,7 +688,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -699,7 +699,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -710,7 +710,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -721,7 +721,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -732,7 +732,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -743,7 +743,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -754,7 +754,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -765,7 +765,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -776,7 +776,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -787,7 +787,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -798,7 +798,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -809,7 +809,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -820,7 +820,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -831,7 +831,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -842,7 +842,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -853,7 +853,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -864,7 +864,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -875,7 +875,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -886,7 +886,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -897,7 +897,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -908,7 +908,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -919,7 +919,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -930,7 +930,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -941,7 +941,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -952,7 +952,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -963,7 +963,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -974,7 +974,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -985,7 +985,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -996,7 +996,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1007,7 +1007,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1018,7 +1018,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1029,7 +1029,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1040,7 +1040,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1051,7 +1051,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1062,7 +1062,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1073,7 +1073,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1084,7 +1084,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1095,7 +1095,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1106,7 +1106,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1117,7 +1117,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1128,7 +1128,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1139,7 +1139,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1150,7 +1150,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1161,7 +1161,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1172,7 +1172,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1183,7 +1183,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1194,7 +1194,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1205,7 +1205,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1216,7 +1216,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1227,7 +1227,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1238,7 +1238,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1249,7 +1249,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1260,7 +1260,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1271,7 +1271,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1282,7 +1282,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1293,7 +1293,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1304,7 +1304,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1315,7 +1315,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1326,7 +1326,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1337,7 +1337,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1348,7 +1348,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1359,7 +1359,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1370,7 +1370,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1381,7 +1381,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1392,7 +1392,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1403,7 +1403,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1414,7 +1414,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1425,7 +1425,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1436,7 +1436,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1447,7 +1447,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1458,7 +1458,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1469,7 +1469,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1480,7 +1480,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1491,7 +1491,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1502,7 +1502,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1513,7 +1513,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1524,7 +1524,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1535,7 +1535,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1546,7 +1546,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1557,7 +1557,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1568,7 +1568,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1579,7 +1579,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1590,7 +1590,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1601,7 +1601,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1612,7 +1612,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1623,7 +1623,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1634,7 +1634,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1645,7 +1645,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1656,7 +1656,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1667,7 +1667,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1678,7 +1678,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1689,7 +1689,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1700,7 +1700,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1711,7 +1711,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1722,7 +1722,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1733,7 +1733,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1744,7 +1744,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1755,7 +1755,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1766,7 +1766,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1777,7 +1777,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1788,7 +1788,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1799,7 +1799,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1810,7 +1810,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1821,7 +1821,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1832,7 +1832,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1843,7 +1843,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1854,7 +1854,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1865,7 +1865,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1876,7 +1876,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1887,7 +1887,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1898,7 +1898,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1909,7 +1909,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1920,7 +1920,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1931,7 +1931,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1942,7 +1942,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1953,7 +1953,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1964,7 +1964,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1975,7 +1975,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1986,7 +1986,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -1997,7 +1997,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2008,7 +2008,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2019,7 +2019,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2030,7 +2030,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2041,7 +2041,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2052,7 +2052,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2063,7 +2063,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2074,7 +2074,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2085,7 +2085,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2096,7 +2096,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2107,7 +2107,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2118,7 +2118,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2129,7 +2129,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2140,7 +2140,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2151,7 +2151,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2162,7 +2162,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2173,7 +2173,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2184,7 +2184,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2195,7 +2195,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2206,7 +2206,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2217,7 +2217,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2228,7 +2228,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2239,7 +2239,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2250,7 +2250,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2261,7 +2261,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2272,7 +2272,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2283,7 +2283,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2294,7 +2294,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2305,7 +2305,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2316,7 +2316,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2327,7 +2327,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2338,7 +2338,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2349,7 +2349,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2360,7 +2360,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2371,7 +2371,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2382,7 +2382,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2393,7 +2393,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2404,7 +2404,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2415,7 +2415,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2426,7 +2426,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2437,7 +2437,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2448,7 +2448,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2459,7 +2459,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2470,7 +2470,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2481,7 +2481,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2492,7 +2492,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2503,7 +2503,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2514,7 +2514,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2525,7 +2525,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2536,7 +2536,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2547,7 +2547,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2558,7 +2558,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2569,7 +2569,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2580,7 +2580,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2591,7 +2591,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2602,7 +2602,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2613,7 +2613,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2624,7 +2624,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2635,7 +2635,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2646,7 +2646,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2657,7 +2657,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2668,7 +2668,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2679,7 +2679,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2690,7 +2690,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2701,7 +2701,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2712,7 +2712,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2723,7 +2723,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2734,7 +2734,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2745,7 +2745,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2756,7 +2756,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2767,7 +2767,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2778,7 +2778,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2789,7 +2789,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2800,7 +2800,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2811,7 +2811,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2822,7 +2822,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2833,7 +2833,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2844,7 +2844,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2855,7 +2855,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2866,7 +2866,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2877,7 +2877,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2888,7 +2888,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2899,7 +2899,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2910,7 +2910,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2921,7 +2921,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2932,7 +2932,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2943,7 +2943,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2954,7 +2954,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2965,7 +2965,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2976,7 +2976,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2987,7 +2987,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -2998,7 +2998,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3009,7 +3009,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3020,7 +3020,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3031,7 +3031,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3042,7 +3042,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3053,7 +3053,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3064,7 +3064,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3075,7 +3075,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3086,7 +3086,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3097,7 +3097,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3108,7 +3108,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3119,7 +3119,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3130,7 +3130,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3141,7 +3141,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3152,7 +3152,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3163,7 +3163,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3174,7 +3174,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3185,7 +3185,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3196,7 +3196,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3207,7 +3207,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3218,7 +3218,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3229,7 +3229,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3240,7 +3240,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3251,7 +3251,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3262,7 +3262,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3273,7 +3273,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3284,7 +3284,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3295,7 +3295,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3306,7 +3306,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3317,7 +3317,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3328,7 +3328,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3339,7 +3339,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3350,7 +3350,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3361,7 +3361,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3372,7 +3372,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3383,7 +3383,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3394,7 +3394,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3405,7 +3405,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3416,7 +3416,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3427,7 +3427,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3438,7 +3438,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3449,7 +3449,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3460,7 +3460,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3471,7 +3471,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3482,7 +3482,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3493,7 +3493,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3504,7 +3504,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3515,7 +3515,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3526,7 +3526,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3537,7 +3537,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3548,7 +3548,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3559,7 +3559,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3570,7 +3570,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3581,7 +3581,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3592,7 +3592,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3603,7 +3603,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3614,7 +3614,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3625,7 +3625,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3636,7 +3636,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3647,7 +3647,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3658,7 +3658,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3669,7 +3669,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3680,7 +3680,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3691,7 +3691,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3702,7 +3702,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3713,7 +3713,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3724,7 +3724,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3735,7 +3735,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3746,7 +3746,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3757,7 +3757,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3768,7 +3768,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3779,7 +3779,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3790,7 +3790,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3801,7 +3801,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3812,7 +3812,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3823,7 +3823,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3834,7 +3834,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3845,7 +3845,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3856,7 +3856,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3867,7 +3867,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3878,7 +3878,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3889,7 +3889,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3900,7 +3900,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3911,7 +3911,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3922,7 +3922,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3933,7 +3933,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3944,7 +3944,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3955,7 +3955,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3966,7 +3966,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3977,7 +3977,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3988,7 +3988,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -3999,7 +3999,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4010,7 +4010,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4021,7 +4021,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4032,7 +4032,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4043,7 +4043,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4054,7 +4054,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4065,7 +4065,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4076,7 +4076,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4087,7 +4087,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4098,7 +4098,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4109,7 +4109,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4120,7 +4120,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4131,7 +4131,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4142,7 +4142,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4153,7 +4153,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4164,7 +4164,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4175,7 +4175,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4186,7 +4186,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4197,7 +4197,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4208,7 +4208,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4219,7 +4219,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4230,7 +4230,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4241,7 +4241,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4252,7 +4252,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4263,7 +4263,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4274,7 +4274,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4285,7 +4285,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4296,7 +4296,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4307,7 +4307,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4318,7 +4318,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4329,7 +4329,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4340,7 +4340,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4351,7 +4351,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4362,7 +4362,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4373,7 +4373,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4384,7 +4384,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4395,7 +4395,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4406,7 +4406,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4417,7 +4417,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4428,7 +4428,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4439,7 +4439,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4450,7 +4450,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4461,7 +4461,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4472,7 +4472,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4483,7 +4483,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4494,7 +4494,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4505,7 +4505,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4516,7 +4516,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4527,7 +4527,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4538,7 +4538,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4549,7 +4549,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4560,7 +4560,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4571,7 +4571,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4582,7 +4582,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4593,7 +4593,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4604,7 +4604,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4615,7 +4615,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4626,7 +4626,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4637,7 +4637,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4648,7 +4648,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4659,7 +4659,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4670,7 +4670,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4681,7 +4681,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4692,7 +4692,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4703,7 +4703,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4714,7 +4714,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4725,7 +4725,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4736,7 +4736,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4747,7 +4747,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4758,7 +4758,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4769,7 +4769,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4780,7 +4780,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4791,7 +4791,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4802,7 +4802,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4813,7 +4813,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4824,7 +4824,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4835,7 +4835,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4846,7 +4846,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4857,7 +4857,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4868,7 +4868,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4879,7 +4879,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4890,7 +4890,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4901,7 +4901,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4912,7 +4912,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4923,7 +4923,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4934,7 +4934,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4945,7 +4945,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4956,7 +4956,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4967,7 +4967,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4978,7 +4978,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -4989,7 +4989,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5000,7 +5000,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5011,7 +5011,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5022,7 +5022,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5033,7 +5033,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5044,7 +5044,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5055,7 +5055,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5066,7 +5066,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5077,7 +5077,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5088,7 +5088,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5099,7 +5099,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5110,7 +5110,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5121,7 +5121,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5132,7 +5132,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5143,7 +5143,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5154,7 +5154,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5165,7 +5165,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5176,7 +5176,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5187,7 +5187,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5198,7 +5198,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5209,7 +5209,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5220,7 +5220,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5231,7 +5231,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5242,7 +5242,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5253,7 +5253,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5264,7 +5264,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5275,7 +5275,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5286,7 +5286,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5297,7 +5297,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5308,7 +5308,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5319,7 +5319,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5330,7 +5330,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5341,7 +5341,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5352,7 +5352,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5363,7 +5363,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5374,7 +5374,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5385,7 +5385,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5396,7 +5396,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5407,7 +5407,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5418,7 +5418,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5429,7 +5429,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5440,7 +5440,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5451,7 +5451,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5462,7 +5462,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5473,7 +5473,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5484,7 +5484,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5495,7 +5495,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5506,7 +5506,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5517,7 +5517,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5528,7 +5528,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5539,7 +5539,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5550,7 +5550,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5561,7 +5561,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5572,7 +5572,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5583,7 +5583,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5594,7 +5594,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5605,7 +5605,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5616,7 +5616,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5627,7 +5627,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5638,7 +5638,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5649,7 +5649,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5660,7 +5660,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5671,7 +5671,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5682,7 +5682,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5693,7 +5693,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5704,7 +5704,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5715,7 +5715,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5726,7 +5726,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5737,7 +5737,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5748,7 +5748,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5759,7 +5759,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5770,7 +5770,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5781,7 +5781,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5792,7 +5792,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5803,7 +5803,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5814,7 +5814,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5825,7 +5825,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5836,7 +5836,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5847,7 +5847,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5858,7 +5858,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5869,7 +5869,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5880,7 +5880,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5891,7 +5891,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5902,7 +5902,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5913,7 +5913,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5924,7 +5924,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5935,7 +5935,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5946,7 +5946,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5957,7 +5957,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5968,7 +5968,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5979,7 +5979,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -5990,7 +5990,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6001,7 +6001,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6012,7 +6012,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6023,7 +6023,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6034,7 +6034,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6045,7 +6045,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6056,7 +6056,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6067,7 +6067,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6078,7 +6078,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6089,7 +6089,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6100,7 +6100,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6111,7 +6111,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6122,7 +6122,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6133,7 +6133,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6144,7 +6144,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6155,7 +6155,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6166,7 +6166,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6177,7 +6177,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6188,7 +6188,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6199,7 +6199,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6210,7 +6210,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6221,7 +6221,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6232,7 +6232,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6243,7 +6243,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>
@@ -6254,7 +6254,7 @@
         <viz:shape value="triangle" />
         <attvalues>
           <attvalue for="0" value="1" />
-          <attvalue for="1" value="NaN" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="Ingredient" />
           <attvalue for="3" value="3" />
         </attvalues>

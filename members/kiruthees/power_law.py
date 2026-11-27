@@ -1,8 +1,19 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
-de = pd.read_csv("edges.csv")
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 k_raw = de["Target"].value_counts().values.astype(float)
 n = len(k_raw)
 
@@ -66,5 +77,5 @@ ax2.grid(True, which="both", ls="--", alpha=0.3)
 ax2.legend()
 
 plt.tight_layout()
-plt.savefig("masala_power_law_validation.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_power_law_validation.png", dpi=300)
 plt.show()

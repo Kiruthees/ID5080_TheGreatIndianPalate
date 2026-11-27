@@ -2,9 +2,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from pathlib import Path
 
-dn = pd.read_csv("nodes.csv")
-de = pd.read_csv("edges.csv")
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
+dn = pd.read_csv(DATA_DIR / "nodes_9.0.csv")
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 # filter out generic "indian" to isolate distinct states/regions
 dn_reg = dn.dropna(subset=["Cuisine"]).copy()
@@ -92,7 +103,7 @@ ax2.set_xlabel("Lift (Fold-Enrichment over Baseline)")
 ax2.grid(axis="x", ls="--", alpha=0.4)
 
 plt.tight_layout()
-plt.savefig("masala_cuisine_lift_clean.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_cuisine_lift_clean.png", dpi=300)
 plt.show()
 
 # ----------------------------------------------------
@@ -120,5 +131,5 @@ for idx, c in enumerate(top4_c):
     axes2[idx].grid(axis="x", ls=":", alpha=0.4)
 
 plt.tight_layout()
-plt.savefig("masala_regional_signatures.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_regional_signatures.png", dpi=300)
 plt.show()

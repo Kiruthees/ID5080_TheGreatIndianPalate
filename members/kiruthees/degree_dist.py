@@ -2,17 +2,28 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import powerlaw
+from pathlib import Path
 
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
 # ============================================================
 # CONFIGURATION TOGGLE
 # True  -> 2 separate image files (2 plots each)
 # False -> 1 single combined file (2x2 grid)
 # ============================================================
-SPLIT_FIGS = False
+SPLIT_FIGS = True
 
 # 1. LOAD DATA
-dn = pd.read_csv("nodes.csv")
-de = pd.read_csv("edges.csv")
+dn = pd.read_csv(DATA_DIR / "nodes_9.0.csv")
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 ing_deg = de["Target"].value_counts()
 rec_deg = de["Source"].value_counts()
@@ -158,7 +169,7 @@ if "Cuisine" in dn.columns:
     ord_c = df_sub.groupby("Cuisine")["k"].median().sort_values().index
     bdata = [df_sub[df_sub["Cuisine"] == c]["k"].values for c in ord_c]
 
-    bp = ax4.boxplot(bdata, tick_labels=ord_c, vert=False, patch_artist=True)
+    bp = ax4.boxplot(bdata, tick_labels=ord_c, orientation="horizontal", patch_artist=True)
     if "Color" in df_sub.columns:
         cmap = (
             df_sub.drop_duplicates("Cuisine")
@@ -183,9 +194,9 @@ else:
 # 4. SAVE AND SHOW
 if SPLIT_FIGS:
     f1.tight_layout()
-    f1.savefig("masala_degrees_powerlaw.png", dpi=300, bbox_inches="tight")
+    f1.savefig(OUT_DIR / "masala_degrees_powerlaw.png", dpi=300, bbox_inches="tight")
     f2.tight_layout()
-    f2.savefig("masala_recipe_complexity.png", dpi=300, bbox_inches="tight")
+    f2.savefig(OUT_DIR / "masala_recipe_complexity.png", dpi=300, bbox_inches="tight")
 else:
     f_all.tight_layout()
     f_all.savefig(

@@ -2,8 +2,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy.optimize import curve_fit
+from pathlib import Path
 
-de = pd.read_csv("edges.csv")
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 # ingredient counts and ranks
 ic = de["Target"].value_counts()
@@ -75,5 +86,5 @@ plt.grid(True, which="both", ls="--", alpha=0.3)
 plt.legend(fontsize=10)
 
 plt.tight_layout()
-plt.savefig("masala_zipf_mandelbrot.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_zipf_mandelbrot.png", dpi=300)
 plt.show()

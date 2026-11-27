@@ -1,9 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
-dn = pd.read_csv("nodes.csv")
-de = pd.read_csv("edges.csv")
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
+DATA_DIR = BASE_DIR / "common" / "data_processed"
+OUT_DIR = BASE_DIR / "members" / "kiruthees"
+dn = pd.read_csv(DATA_DIR / "nodes_9.0.csv")
+de = pd.read_csv(DATA_DIR / "edges_6.0.csv")
 
 m = de.merge(
     dn[["Id", "Cuisine", "Color"]].dropna(subset=["Cuisine"]),
@@ -123,7 +134,7 @@ ax[2].set_title(
 )
 
 plt.tight_layout()
-plt.savefig("masala_intuitive_metrics.png", dpi=300)
+plt.savefig(OUT_DIR / "masala_intuitive_metrics.png", dpi=300)
 plt.show()
 
 print("=== STATS FOR PPT ===")
