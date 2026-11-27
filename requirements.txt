@@ -6,3 +6,4 @@ scipy
 ipython
 seaborn
 openpyxl
+jupyter

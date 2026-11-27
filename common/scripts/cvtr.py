@@ -3,7 +3,14 @@ import pandas as pd
 import re
 from pathlib import Path
 
-BASE_DIR = Path.cwd().resolve().parent.parent
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
 INPUT_FILE = BASE_DIR / "common" / "data_raw" / "raw_data.xlsx"
 OUTPUT_FILE = BASE_DIR / "common" / "data_processed" / "ingredient_dish_edges.csv"
 SHEET_NAME = "Cleaned_Indian_Food_Dataset"

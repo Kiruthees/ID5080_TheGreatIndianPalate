@@ -4,7 +4,14 @@ from networkx.algorithms import bipartite
 from networkx.algorithms.community import louvain_communities
 from pathlib import Path
 
-BASE_DIR = Path.cwd().resolve().parent.parent
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
 DATA_DIR   = BASE_DIR / "common" / "data_processed"
 NODES = DATA_DIR / "nodes_9.0.csv"
 EDGES = DATA_DIR / "edges_6.0.csv"

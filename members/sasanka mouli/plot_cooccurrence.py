@@ -6,7 +6,14 @@ import seaborn as sns
 import networkx as nx
 from pathlib import Path
 
-BASE_DIR = Path.cwd().resolve().parent.parent
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
 DATA_FILE   = BASE_DIR / "members" / "sasanka mouli" / "cooccurrence_results.csv"
 OUT_DIR = BASE_DIR / "members" / "sasanka mouli" / "figs"
 

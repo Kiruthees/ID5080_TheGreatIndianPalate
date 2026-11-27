@@ -6,7 +6,14 @@ import matplotlib.pyplot as plt
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-BASE_DIR = Path.cwd().resolve().parent.parent
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
 DATA_DIR   = BASE_DIR / "common" / "data_processed"
 OUT_DIR = BASE_DIR / "members" / "raghav"
 df = pd.read_csv(DATA_DIR / "ingredient_dish_edges.csv")

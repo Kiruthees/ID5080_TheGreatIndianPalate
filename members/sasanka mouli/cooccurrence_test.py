@@ -152,7 +152,14 @@ def pair_table(names, obs, mu, sd, p_emp, min_expected):
     df["q"] = bh(df.p.to_numpy())                      # BH over all pairs tested
     return df
 
-BASE_DIR = Path.cwd().resolve().parent.parent
+def find_root():
+    p = Path.cwd().resolve()
+    for d in [p, *p.parents]:
+        if (d / "MANIFEST.md").exists():
+            return d
+    raise FileNotFoundError("Run this from inside the project folder")
+
+BASE_DIR = find_root()
 DATA_DIR   = BASE_DIR / "common" / "data_processed"
 NODES_FILE = DATA_DIR / "nodes_9.0.csv"
 EDGES_FILE = DATA_DIR / "edges_6.0.csv"
