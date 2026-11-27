@@ -44,7 +44,7 @@ jupyter nbconvert --to notebook --execute --inplace members/raghav/percolation.i
 |---|---|---|---|---|
 | 1 | `common/scripts/cvtr.py` | `common/data_raw/raw_data.xlsx` (sheet `Cleaned_Indian_Food_Dataset`) | `common/data_processed/ingredient_dish_edges.csv` | 3 s |
 | 2 | `common/scripts/cleaning.ipynb` | `ingredient_dish_edges.csv` | `nodes_intermediate.csv`, `edges_intermediate.csv` | 3 s |
-| 3 | **manual cleaning by Mizal** | the two intermediate files | `nodes_9.0.csv`, `edges_6.0.csv` | na |
+| 3 | **Manual Cleaning** | the two intermediate files | `nodes_9.0.csv`, `edges_6.0.csv` | >20h |
 
 Steps 1 and 2 were re-run on a fresh checkout and reproduce the committed files exactly (the CSV line endings may differ by operating system).
 
