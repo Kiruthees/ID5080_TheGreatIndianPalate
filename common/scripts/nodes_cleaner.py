@@ -9,7 +9,7 @@ def find_root():
     raise FileNotFoundError("Run this from inside the project folder")
 
 BASE_DIR = find_root()
-DATA_DIR = BASE_DIR / "common" / "data_preprocessed"
+DATA_DIR = BASE_DIR / "common" / "data_processed"
 # PART ONE: Removing Incorrect Nodes
 nodes_df = pd.read_csv(DATA_DIR / 'nodes_9.4_regions.csv')
 edges_df = pd.read_csv(DATA_DIR / 'edges_6.5_merger_map.csv')

@@ -13,7 +13,7 @@ def find_root():
     raise FileNotFoundError("Run this from inside the project folder")
 
 BASE_DIR = find_root()
-DATA_DIR = BASE_DIR / "common" / "data_preprocessed"
+DATA_DIR = BASE_DIR / "common" / "data_processed"
 
 nodes = pd.read_csv(DATA_DIR / 'nodes_9.0.csv')
 edges = pd.read_csv(DATA_DIR / 'edges_6.0.csv')
@@ -49,7 +49,9 @@ for tv in t_values:
     common = cpi_fraction[cpi_fraction >= tv].index
     B_t = B.copy()
     B_t.remove_nodes_from(common)                                # drop the common ingredients
-    proj = bipartite.weighted_projected_graph(B_t, cuisines)     # cuisine projection
+    if not any(B_t.nodes[n]['bipartite'] == 1 for n in B_t):   # all ingredients removed
+        densities.append(0.0); continue
+    proj = bipartite.weighted_projected_graph(B_t, cuisines)
     densities.append(nx.density(proj))
 
 # Plotting

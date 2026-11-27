@@ -16,12 +16,15 @@ Every file, one line each: what it is and which script made it. Filename pattern
 | File | What it is | Made by |
 |---|---|---|
 | `TGIP_1.svg`, `TGIP_2.svg`, `TGIP_3.svg`, `TGIP_4.svg` | Four vector options for the final network figure (2 to 5 MB each) | Gephi, Canva |
+| `Circular.pdf` | Final-figure option: the 17 named regional cuisines (22 nodes of `nodes_9.5_merged_regions.csv` minus Andhra, Indian, North East India Recipes, North Indian Recipes, South Indian Recipes) on a circular layout; edges from `edges_6.5_merger_map.csv`; A4 vector PDF, 4.4 KB. Colourblind-friendly; intensity measures higher degree | Gephi |
+| `Geo_layout.pdf` | Same network placed at each cuisine's latitude and longitude from `nodes_9.5_merged_regions.csv`, straight edges; A4 vector PDF, 4.6 KB | Gephi, Geo Layout|
+| `Geo_layout_curved.pdf` | Same geographic layout with curved edges; A4 vector PDF, 5.7 KB | Gephi |
 
 ## common/data_raw/
 
 | File | What it is | Made by |
 |---|---|---|
-| `raw_data.xlsx` | Raw recipe dataset, sheet `Cleaned_Indian_Food_Dataset`, exactly as collected | collected externally [CONFIRM: source, access date] |
+| `raw_data.xlsx` | Raw recipe dataset, sheet `Cleaned_Indian_Food_Dataset`, exactly as collected | collected externally from kaggle dataset |
 
 ## common/data_processed/
 
@@ -35,6 +38,9 @@ Every file, one line each: what it is and which script made it. Filename pattern
 | `nodes_9.0.csv` | **Final node table** (Type, Cuisine, ...) used by every analysis | manual cleaning of `nodes_intermediate.csv` by Mizal (no script) |
 | `edges_6.0.csv` | **Final edge table** (Source = recipe, Target = ingredient, 47,376 rows, 3,933 recipes) used by every analysis | manual cleaning of `edges_intermediate.csv` by Mizal (no script) |
 | `colored_recipes_ingredients.gexf` | Bipartite graph with ingredient nodes colored by the average color of their recipes | `common/scripts/color_conv.py` |
+| `nodes_9.4_regions.csv` | Cuisine-level node table for the regional network (39 cuisines; ID, Label, Latitude, Longitude, Color) | Made by additional scripts (Mizal) |
+| `edges_6.5_merger_map.csv` | Cuisine-cuisine projection after merging 13 sub-regional cuisines into their parents (98 edges; Source, Target, Weight = number of shared ingredients), with ingredients used by at least 16% of cuisines removed | `visualizations.py` |
+| `nodes_9.5_merged_regions.csv` | Final regional node table (22 cuisines): `nodes_9.4_regions.csv` minus the 13 merged cuisines and 4 cuisines left with no edges (Haryana, Jharkhand, Nagaland, Uttarakhand-North Kumaon) | `nodes_cleaner.py` |
 | `.gitkeep` | Keeps the folder in git | n/a |
 
 ## common/scripts/
@@ -45,6 +51,9 @@ Every file, one line each: what it is and which script made it. Filename pattern
 | `cleaning.ipynb` | Scripted cleaning and name merging, produces the intermediate node and edge files | written by team |
 | `color_conv.py` | Builds the colored bipartite graph | written by team |
 | `.gitkeep` | Keeps the folder in git | n/a |
+| `density_thres.py` | Sweeps the threshold for deleting common ingredients (0.02 to 1.00) and plots cuisine-projection density to pick the cut-off (critical t = 0.16); reads `nodes_9.0.csv`, `edges_6.0.csv` | Mizal |
+| `visualizations.py` | Merges sub-regional cuisines into parent cuisines, removes ingredients above t = 0.16, projects onto cuisines and writes `edges_6.5_merger_map.csv`; reads `nodes_9.0.csv`, `edges_6.0.csv` | Mizal |
+| `nodes_cleaner.py` | Keeps only the nodes that appear in `edges_6.5_merger_map.csv` and writes `nodes_9.5_merged_regions.csv`; the commented-out parts are older cleaning steps | Mizal |
 
 ## members/kiruthees/
 

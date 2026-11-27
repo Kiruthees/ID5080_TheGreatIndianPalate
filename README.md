@@ -76,6 +76,9 @@ All of these read `nodes_9.0.csv` and `edges_6.0.csv` from `common/data_processe
 | Power-law validation (PDF, CCDF, Clauset MLE)        | `members/kiruthees/power_law.py`                                                                             | `masala_power_law_validation.png`                                                                               | 1 s           |
 | Zipf-Mandelbrot fit of ingredient usage              | `members/kiruthees/zipf.py`                                                                                  | `masala_zipf_mandelbrot.png`                                                                                    | 2 s           |
 | Power couples, effort meter, recipe complexity tiers | `members/kiruthees/last_metrics.py`                                                                          | `masala_intuitive_metrics.png`                                                                                  | 1 s           |
+| Threshold for removing common ingredients (regional network) | `density_thres.py` | plot on screen only; critical t = 0.16 | about 1 s |
+| Merge regional cuisines and project onto cuisines (run after the threshold step) | `visualizations.py` | `edges_6.5_merger_map.csv` | about 1 s |
+| Drop unused cuisine nodes (run after `visualizations.py`) | `nodes_cleaner.py` (reads `nodes_9.4_regions.csv` and `edges_6.5_merger_map.csv`) | `nodes_9.5_merged_regions.csv` | under 1 s |
 
 Times for the scripts above were measured on one machine.
 

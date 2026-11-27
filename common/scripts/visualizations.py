@@ -13,7 +13,7 @@ def find_root():
     raise FileNotFoundError("Run this from inside the project folder")
 
 BASE_DIR = find_root()
-DATA_DIR = BASE_DIR / "common" / "data_preprocessed"
+DATA_DIR = BASE_DIR / "common" / "data_processed"
 
 nodes = pd.read_csv(DATA_DIR / 'nodes_9.0.csv')
 edges = pd.read_csv(DATA_DIR / 'edges_6.0.csv')
@@ -66,4 +66,4 @@ M.remove_edges_from(new_cie)
 merged_proj = bipartite.weighted_projected_graph(M, new_cuisines)
 mergedmap_df = pd.DataFrame([(u,v,w.get('weight',1)) for u,v,w in merged_proj.edges(data=True)])
 
-mergedmap_df.to_csv(DATA_DIR / 'edges_6.5_merger_map.csv', index=False)
+mergedmap_df.to_csv(DATA_DIR / 'edges_6.5_merger_map.csv', index=False, header=['Source', 'Target', 'Weight'])
