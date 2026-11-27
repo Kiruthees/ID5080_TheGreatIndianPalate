@@ -50,7 +50,7 @@ Steps 1 and 2 were re-run on a fresh checkout and reproduce the committed files 
 
 **Step 3 is not scripted.** `nodes_9.0.csv` and `edges_6.0.csv` are committed as the final source data and every analysis below starts from them. TODO: add the change log or a diff against the intermediate files so this step can be traced.
 
-Raw data source: TODO (website or dataset name, URL, date accessed, licence or permission). The report's section 2 must say the same.
+Raw data source: Indian Food Recipes Dataset (Cleaned Version) from Kaggle - https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset
 
 ## 4. Run the analyses
 

@@ -107,8 +107,8 @@ All scripts read `nodes_9.0.csv` and/or `edges_6.0.csv`.
 | File | What it is | Made by |
 |---|---|---|
 | `analysis2.ipynb` | Regional prevalence of ingredient families | Rohieth Raj S |
-| `1_Millets.png`, `2_Dals_Lentils_and_Grams.png`, `3_Regional_and_Specialty_Masalas.png`, `4_Leafy_Greens_and_Culinary_Leaves.png`, `5_Whole_and_Ground_Spices.png`, `6_Oils_and_Fats.png`, `7_Rice_Varieties.png` | Regional prevalence heatmaps for each ingredient family | `analysis2.ipynb` |
-| `Macro_Regions_15_Staples.png`, `Regional_Cuisines_15_Staples.png` | Regional prevalence heatmaps for 15 staple ingredients across macro-regions and regional cuisines | `analysis2.ipynb` |
+| `1_Millets.png`, `2_Dals_Lentils_and_Grams.png`, `3_Regional_and_Specialty_Masalas.png`, `4_Leafy_Greens_and_Culinary_Leaves.png`, `5_Whole_and_Ground_Spices.png`, `6_Oils_and_Fats.png`, `7_Rice_Varieties.png` | Regional prevalence heatmaps for each ingredient family | `analysis2.ipynb`, additional analysis |
+| `Macro_Regions_15_Staples.png`, `Regional_Cuisines_15_Staples.png` | Regional prevalence heatmaps for 15 staple ingredients across macro-regions and regional cuisines | `analysis2.ipynb`, additional analysis |
 | `communities.py` | Louvain communities of ingredients and their prevalence across cuisines | Rohieth Raj S |
 | `communities_and_cuisines.png` | Community figure | `communities.py` |
 | `.gitkeep` | Keeps the folder in git | n/a |
