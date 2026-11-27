@@ -1,0 +1,44 @@
+INDIAN (white), FUSION (white/yellow)
+
+    A. NORTH INDIAN (RED)
+        A1. Mughlai (red-19)
+        A2. Kashmiri (orange-red-20)
+        A3. Himachal (Blue-Red-18)
+        A4. Haryanvi (Orange-21)
+        A5. Punjabi (Magenta-17)
+        A6. Uttar Pradesh (Golden-Yellow-24)
+            A6.1. Awadhi
+            A6.2. Lucknow
+
+    B. WEST INDIAN (PURPLE)
+        B1. Rajasthani (Fuchsia-16)
+        B2. Sindhi (Purple-15)
+        B3. Gujarati (Red-Violet-14)
+        B4. Maharashtrian(Violet-13)
+        B5. Konkani(12.5)
+        B6. Goa (Blue-Violet-12)
+
+    C. NORTHEAST INDIAN (Yellow-GREEN-3)
+        C1. Assamese (Yellow-Green-3)
+
+    D. EAST INDIAN (GREEN)
+        D1. Bihari (Spring-Green-4)
+        D2. Jharkhand (Green-5)
+        D3. Bengali(Blue-Green-6)
+        D4. Oriya (Aqua-Green-7)
+
+    E. SOUTH INDIAN (BLUE)
+        E1. Karnataka (Blue-11)
+            E1.1. Coastal Karnataka
+            E1.2. Coorg
+            E1.3. Mangalorean
+            E1.4. North Karnataka
+            E1.5. South Karnataka
+            E1.6. Udupi
+        E2. Andhra (Aqua-Blue-8)
+            E2.1. Hyderabadi
+        E3. Kerala (Cerulean-Blue-10)
+            E3.1. Malabar
+        E4. Tamil Nadu (Turquoise-Blue-9)
+            E4.1. Chettinad
+            E4.2. Kongunadu
